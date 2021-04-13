@@ -1,0 +1,82 @@
+/* Stanfard properties */
+
+* {
+    box-sizing: border-box;
+}
+
+.group {
+    display: flow-root;
+}
+
+
+/* More base styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Text sizes */
+
+.smalltxt {
+    font-size: 20px;
+}
+
+.normaltxt {
+    font-size: 30px;
+}
+
+.bigtxt {
+    font-size: 40px;
+}
+
+
+/* menu */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+}
+
+.menu {
+    display: inline-block;
+    list-style: none;
+    margin: auto 0;
+}
+
+.menu li {
+    color: white;
+}
+
+.menu li a {
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
