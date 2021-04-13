@@ -1,3 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: black;
+}
+
+.group {
+    display: flow-root;
+}
+
+.small-txt {
+    font-size: 20px;
+}
+
+.normal-txt {
+    font-size: 30px;
+}
+
+.big-txt {
+    font-size: 40px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+}
