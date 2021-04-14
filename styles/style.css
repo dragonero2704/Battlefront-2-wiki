@@ -92,11 +92,11 @@ header {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin: auto 0;
     margin-left: 50px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .cta{
