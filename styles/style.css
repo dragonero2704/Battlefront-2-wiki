@@ -17,6 +17,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -37,17 +38,26 @@ img {
 /* Text sizes */
 
 .smalltxt {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .normaltxt {
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.bigtxt {
+.medtxt{
     font-size: 40px;
 }
 
+.bigtxt {
+    font-size: 70px;
+}
+
+.introtxt{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* menu */
 
@@ -57,19 +67,22 @@ header {
     top: 0;
     left: 0;
     display: flex;
-    background-color: darkblue;
+    background-color: rgb(42, 42, 44);
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 .menu {
-    display: inline-block;
+    width: 100%;
     list-style: none;
     margin: auto 0;
 }
 
 .menu li {
     color: white;
+    display: inline-block;
+    margin-right: 30px;
+    
 }
 
 .menu li a {
@@ -79,4 +92,10 @@ header {
 .logo {
     width: 100px;
     height: auto;
+}
+
+.cta{
+    color: white;
+    margin: auto 0;
+    padding-right: 20px;
 }
