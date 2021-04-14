@@ -29,11 +29,11 @@ p {
     color: black;
 }
 
-img {
-    max-width: 100%;
+
+img{
+    width: inherit;
     height: auto;
 }
-
 
 /* Text sizes */
 
@@ -91,7 +91,7 @@ header {
 
 .logo {
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
 .cta{
