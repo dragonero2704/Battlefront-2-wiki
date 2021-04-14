@@ -97,5 +97,15 @@ header {
 .cta{
     color: white;
     margin: auto 0;
-    padding-right: 20px;
+    width: 300px;
+}
+
+.button{
+    background-color: orange;
+    display: inline-block;
+    padding: 18px 28px;
+    border-radius: 4px;
+}
+.button:focus{
+    transform: scale(0.9);
 }
