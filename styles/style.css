@@ -65,12 +65,15 @@ img{
 header {
     position: fixed;
     width: 100%;
+    max-width: 1350px;
     top: 0;
-    left: 0;
+    left: 50%;
     display: flex;
-    background-color: rgb(42, 42, 44);
+    /* background-color: rgb(42, 42, 44); */
+    background: transparent;
     color: white;
     padding: 10px;
+    transform: translate(-50%);
 }
 
 .menu {
@@ -96,7 +99,6 @@ header {
     width: 50px;
     height: 50px;
     margin: auto 0;
-    margin-left: 50px;
     /* border: 2px solid red; */
 }
 
@@ -122,13 +124,14 @@ header {
     height: 800px;
     width: 100%;
     background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%),
-    url("../images/Titanfall-2-bt7274.png") no-repeat center center;
+    url("../images/titan-duel.png") no-repeat center center;
     background-size: cover;
 }
 
 .hero__content{
     width: 100%;
     max-width: 1350px;
+    padding: 10px;
     margin: 0 auto;
     color: white;
 }
