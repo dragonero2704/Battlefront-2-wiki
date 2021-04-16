@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    color: black;
 }
 
 a {
@@ -26,7 +27,7 @@ h3,
 h4,
 h5,
 p {
-    color: black;
+    color: inherit;
 }
 
 
@@ -113,4 +114,21 @@ header {
 }
 .button:focus{
     transform: scale(0.9);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%),
+    url("../images/Titanfall-2-bt7274.png") no-repeat center center;
+    background-size: cover;
+}
+
+.hero__content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    color: white;
 }
