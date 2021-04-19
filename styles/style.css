@@ -61,7 +61,7 @@ img{
     font-weight: bold;
 }
 
-/* menu */
+
 
 header {
     position: fixed;
@@ -73,14 +73,17 @@ header {
     /* background-color: rgb(42, 42, 44); */
     background: transparent;
     color: white;
-    padding: 10px;
+    padding: 30px;
     transform: translate(-50%);
 }
+
+/* menu */
 
 .menu {
     width: 100%;
     list-style: none;
     margin: auto 0;
+    
     /* border: 2px solid red; */
 }
 
@@ -97,6 +100,37 @@ header {
     color: white;
 }
 
+@media (max-width:768px){
+.menu{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100vh;
+    background: rgb(49, 47, 47);
+    /* display: none; */
+    padding-top: 80px;
+    transform-origin: center center;
+    transform: translateY(-100vh);
+    transition: .5s ease-in-out;
+    
+}
+
+.menu.menu-show{
+    display: block;
+    transform: translateY(0vh);
+}
+
+    .menu li{
+        display: block;
+        padding-top: 80px;
+        padding-left: 80px;
+        
+    }
+    .cta{
+        display: none;
+    }
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -106,21 +140,33 @@ header {
     /* border: 2px solid red; */
 }
 
+/* cta */
+
 .cta{
     color: white;
     margin: auto 0;
     width: 300px;
 }
 
+@media (max-width:768px){
+    .cta{
+        display: none;
+    }
+}
+
+/* button */
+
 .button{
     background-color: orange;
     display: inline-block;
-    padding: 18px 28px;
-    border-radius: 4px;
+    padding: 20px 30px;
+    border-radius: 8px;
 }
 .button:focus{
     transform: scale(0.9);
 }
+
+/* hero */
 
 .hero{
     display: flex;
@@ -135,7 +181,32 @@ header {
 .hero__content{
     width: 100%;
     max-width: 1350px;
-    padding: 10px;
+    padding: 30px;
     margin: 0 auto;
     color: white;
+}
+
+/* hamburger */
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 80px;
+        right: 80px;
+    }
+
+    .hamburger span{
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;
+    }
 }
