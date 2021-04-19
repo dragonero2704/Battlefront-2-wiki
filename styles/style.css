@@ -30,12 +30,12 @@ p {
     color: inherit;
 }
 
-
-img{
+img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
+
 
 /* Text sizes */
 
@@ -47,7 +47,7 @@ img{
     font-size: 20px;
 }
 
-.medtxt{
+.medtxt {
     font-size: 40px;
 }
 
@@ -55,13 +55,11 @@ img{
     font-size: 70px;
 }
 
-.introtxt{
+.introtxt {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
 }
-
-
 
 header {
     position: fixed;
@@ -77,13 +75,13 @@ header {
     transform: translate(-50%);
 }
 
+
 /* menu */
 
 .menu {
     width: 100%;
     list-style: none;
     margin: auto 0;
-    
     /* border: 2px solid red; */
 }
 
@@ -91,42 +89,36 @@ header {
     color: white;
     display: inline-block;
     margin-right: 20px;
-    
     /* border: 2px solid red; */
-    
 }
 
 .menu li a {
     color: white;
 }
 
-@media (max-width:768px){
-.menu{
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100vh;
-    background: rgb(49, 47, 47);
-    /* display: none; */
-    padding-top: 80px;
-    transform-origin: center center;
-    transform: translateY(-100vh);
-    transition: .5s ease-in-out;
-    
-}
-
-.menu.menu-show{
-    display: block;
-    transform: translateY(0vh);
-}
-
-    .menu li{
-        display: block;
+@media (max-width:768px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: rgb(49, 47, 47);
+        /* display: none; */
         padding-top: 80px;
-        padding-left: 80px;
-        
+        transform-origin: center center;
+        transform: translateY(-100vh);
+        transition: .5s ease-in-out;
     }
-    .cta{
+    .menu.menu-show {
+        display: block;
+        transform: translateY(0vh);
+    }
+    .menu li {
+        display: block;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .cta {
         display: none;
     }
 }
@@ -140,45 +132,48 @@ header {
     /* border: 2px solid red; */
 }
 
+
 /* cta */
 
-.cta{
+.cta {
     color: white;
     margin: auto 0;
     width: 300px;
 }
 
-@media (max-width:768px){
-    .cta{
+@media (max-width:768px) {
+    .cta {
         display: none;
     }
 }
 
+
 /* button */
 
-.button{
+.button {
     background-color: orange;
     display: inline-block;
     padding: 20px 30px;
     border-radius: 8px;
 }
-.button:focus{
+
+.button:focus {
     transform: scale(0.9);
 }
 
+
 /* hero */
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%),
-    url("../images/titan-duel.png") no-repeat center center;
+    background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%), url("../images/titan-duel.png") no-repeat center center;
     background-size: cover;
 }
 
-.hero__content{
+.hero__content {
     width: 100%;
     max-width: 1350px;
     padding: 30px;
@@ -186,23 +181,23 @@ header {
     color: white;
 }
 
+
 /* hamburger */
-.hamburger{
+
+.hamburger {
     display: none;
 }
 
-@media (max-width: 768px){
-    .hamburger{
+@media (max-width: 768px) {
+    .hamburger {
         display: block;
         width: 50px;
         height: 50px;
         position: absolute;
         top: 30px;
         right: 30px;
-
     }
-
-    .hamburger span{
+    .hamburger span {
         width: 100%;
         height: 5px;
         border-radius: 8px;
