@@ -102,21 +102,26 @@ header {
         top: 0;
         left: 0;
         height: 100vh;
-        background: rgb(49, 47, 47);
-        /* display: none; */
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.9));
         padding-top: 80px;
         transform-origin: center center;
         transform: translateY(-100vh);
-        transition: .5s ease-in-out;
     }
     .menu.menu-show {
         display: block;
         transform: translateY(0vh);
+        transition: .5s ease-in-out;
     }
     .menu li {
         display: block;
-        padding-top: 20px;
+        padding-top: 40px;
         padding-left: 20px;
+    }
+    .bigtxt {
+        font-size: 40px;
+    }
+    .introtxt {
+        font-size: 20px;
     }
 }
 
@@ -135,6 +140,7 @@ header {
 .cta {
     color: white;
     margin: auto 0;
+    margin-left: 20px;
     width: 300px;
 }
 
@@ -203,3 +209,9 @@ header {
         margin-bottom: 10px;
     }
 }
+
+
+/* Colori */
+
+
+/* rgb(49, 47, 47, .8) Bel grigio */
