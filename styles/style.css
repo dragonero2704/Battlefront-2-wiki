@@ -14,6 +14,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: black;
+    scrollbar-width: 0%;
 }
 
 a {
@@ -106,11 +107,15 @@ header {
         padding-top: 80px;
         transform-origin: center center;
         transform: translateY(-100vh);
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
     }
     .menu.menu-show {
         display: block;
         transform: translateY(0vh);
+    }
+    .hide-hero__content {
+        /* transform: translateY(100vh); */
+        display: none;
     }
     .menu li {
         display: block;
@@ -174,6 +179,7 @@ header {
     width: 100%;
     background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%), url("../images/titan-duel.png") no-repeat center center;
     background-size: cover;
+    z-index: 0;
 }
 
 .hero__content {
@@ -182,6 +188,8 @@ header {
     padding: 30px;
     margin: 0 auto;
     color: white;
+    /* transform: translateY(0vh); */
+    transition: .5s ease-in-out;
 }
 
 
