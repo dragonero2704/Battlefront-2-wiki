@@ -177,7 +177,7 @@ header {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%), url("../images/titan-duel.png") no-repeat center center;
+    background: linear-gradient(90deg, rgb(128, 128, 128, .8), rgb(82, 79, 79, .3) 70%), url("../media/images/Iden_Versio.jpg") no-repeat center center;
     background-size: cover;
     z-index: 0;
 }
