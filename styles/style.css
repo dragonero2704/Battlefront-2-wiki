@@ -272,6 +272,12 @@ header {
     margin-top: 150px;
 }
 
+@media (max-width:768px) {
+    .mst3 {
+        margin-top: 50px;
+    }
+}
+
 
 /* Colori */
 
