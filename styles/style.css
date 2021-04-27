@@ -31,6 +31,11 @@ p {
     color: inherit;
 }
 
+p {
+    line-height: 28px;
+    color: #666;
+}
+
 img {
     object-fit: contain;
     width: 100%;
@@ -226,6 +231,8 @@ header {
 .poster__content {
     width: 30%;
     height: 100vh;
+    align-items: center;
+    padding: 50px;
 }
 
 .poster__img {
@@ -246,6 +253,25 @@ header {
         width: 100%;
         height: auto;
     }
+}
+
+
+/* Helpers */
+
+.tw {
+    color: white;
+}
+
+.mt1 {
+    margin-top: 50px;
+}
+
+.mt2 {
+    margin-top: 100px;
+}
+
+.mt3 {
+    margin-top: 150px;
 }
 
 
