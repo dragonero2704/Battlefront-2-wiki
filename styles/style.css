@@ -218,6 +218,36 @@ header {
     }
 }
 
+.poster {
+    display: flex;
+    height: 100vh;
+}
+
+.poster__content {
+    width: 30%;
+    height: 100vh;
+}
+
+.poster__img {
+    width: 70%;
+    height: 100vh;
+}
+
+.poster__img img {
+    object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .poster {
+        flex-wrap: wrap;
+    }
+    .poster__content,
+    .poster__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 /* Colori */
 
