@@ -150,8 +150,8 @@ header {
 .cta {
     color: white;
     margin: auto 0;
-    margin-left: 80px;
     width: 300px;
+    text-align: center;
 }
 
 @media (max-width:768px) {
