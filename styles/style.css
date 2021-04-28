@@ -75,7 +75,7 @@ header {
     left: 50%;
     display: flex;
     /* background-color: rgb(42, 42, 44); */
-    background: transparent;
+    /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
     padding: 30px;
     transform: translate(-50%);
@@ -229,12 +229,12 @@ header {
 }
 
 .poster__img {
-    width: 70%;
+    width: 60%;
     height: 100vh;
 }
 
 .poster__content {
-    width: 30%;
+    width: 40%;
     padding: 50px;
 }
 
