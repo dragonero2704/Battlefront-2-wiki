@@ -1,3 +1,7 @@
+/* Helpers */
+
+@import url("./helpers.css");
+
 /* Stanfard properties */
 
 * {
@@ -82,7 +86,7 @@ header {
 }
 
 header:hover {
-    background: linear-gradient(90deg, rgb(0, 0, 0, .4), rgb(0, 0, 0, .4));
+    background: linear-gradient(90deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
 }
 
 
@@ -112,7 +116,7 @@ header:hover {
         top: 0;
         left: 0;
         height: 100vh;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.9));
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
         padding-top: 80px;
         transform-origin: center center;
         transform: translateY(-100vh);
@@ -192,7 +196,6 @@ header:hover {
     width: 100%;
     background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Hero_background_fullhd.jpg") no-repeat center center;
     background-size: cover;
-    z-index: 0;
 }
 
 .hero__content {
@@ -248,6 +251,8 @@ header:hover {
 
 .poster__img img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width:768px) {
@@ -258,31 +263,6 @@ header:hover {
     .poster__img {
         width: 100%;
         height: auto;
-    }
-}
-
-
-/* Helpers */
-
-.tw {
-    color: white;
-}
-
-.mt1 {
-    margin-top: 50px;
-}
-
-.mt2 {
-    margin-top: 100px;
-}
-
-.mt3 {
-    margin-top: 150px;
-}
-
-@media (max-width:768px) {
-    .mst3 {
-        margin-top: 50px;
     }
 }
 
