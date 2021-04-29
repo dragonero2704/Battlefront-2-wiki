@@ -81,6 +81,10 @@ header {
     transform: translate(-50%);
 }
 
+header:hover {
+    background: linear-gradient(90deg, rgb(0, 0, 0, .4), rgb(0, 0, 0, .4));
+}
+
 
 /* menu */
 
