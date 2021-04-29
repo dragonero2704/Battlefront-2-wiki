@@ -78,15 +78,16 @@ header {
     top: 0;
     left: 50%;
     display: flex;
-    /* background-color: rgb(42, 42, 44); */
+    background: transparent;
     /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
     padding: 30px;
+    margin: 0 auto;
     transform: translate(-50%);
 }
 
 header:hover {
-    background: linear-gradient(90deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
 }
 
 
@@ -125,10 +126,6 @@ header:hover {
     .menu.menu-show {
         display: block;
         transform: translateY(0vh);
-    }
-    .hide-hero__content {
-        /* transform: translateY(100vh); */
-        display: none;
     }
     .menu li {
         display: block;
@@ -205,6 +202,13 @@ header:hover {
     margin: 0 auto;
     color: white;
     transition: .5s ease-in-out;
+}
+
+@media (max-width:768px) {
+    .hide-hero__content {
+        /* transform: translateY(100vh); */
+        display: none;
+    }
 }
 
 

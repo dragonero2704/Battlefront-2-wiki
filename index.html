@@ -18,8 +18,8 @@
 </head>
 
 <body>
-
-    <header>
+    <div class="header__top"></div>
+    <header onfocus="ciao()">
         <div class="logo">
             <img src="media/logo/inferno_squad.png" alt="logo image">
         </div>
@@ -34,8 +34,8 @@
                 <a href="./pagine_secondarie/">Online</a>
             </li>
             <!-- <li>
-                <a href="./pagine_secondarie/armi.html">Personaggi</a>
-            </li> -->
+                    <a href="./pagine_secondarie/armi.html">Personaggi</a>
+                </li> -->
             <!-- Fare un submenu? -->
         </ul>
         <div class="cta introtxt">
@@ -47,6 +47,8 @@
             <span></span>
         </div>
     </header>
+    <div class="header__background"></div>
+
 
 
 
@@ -95,3 +97,9 @@
     menu.classList.toggle("menu-show")
 }
 </script> -->
+
+<script>
+    function ciao() {
+        console.log("ciao")
+    }
+</script>
