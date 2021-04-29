@@ -74,7 +74,7 @@ img {
 header {
     position: fixed;
     width: 100%;
-    max-width: 1350px;
+    max-width: 1500px;
     top: 0;
     left: 50%;
     display: flex;
@@ -200,7 +200,7 @@ header:hover {
 
 .hero__content {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1500px;
     padding: 30px;
     margin: 0 auto;
     color: white;
