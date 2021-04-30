@@ -71,6 +71,18 @@ img {
     font-weight: bold;
 }
 
+.header__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.b-g {
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3))
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -86,9 +98,10 @@ header {
     transform: translate(-50%);
 }
 
-header:hover {
+
+/* header:hover {
     background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
-}
+} */
 
 
 /* menu */
@@ -236,6 +249,9 @@ header:hover {
         margin-bottom: 10px;
     }
 }
+
+
+/* poster */
 
 .poster {
     display: flex;

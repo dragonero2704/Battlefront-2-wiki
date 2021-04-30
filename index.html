@@ -14,69 +14,70 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="media/logo/inferno_squad.png" type="image/x-icon">
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Battlefront 2 Wiki</title>
 </head>
 
 <body>
-    <div class="header__top"></div>
-    <header onfocus="ciao()">
-        <div class="logo">
-            <img src="media/logo/inferno_squad.png" alt="logo image">
+    <div class="header__container"></div>
+    <header onmouseover="header_hover()">
+        <div class=" logo ">
+            <img src="media/logo/inferno_squad.png " alt="logo image ">
         </div>
-        <ul class="menu introtxt">
+        <ul class="menu introtxt ">
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html ">Home</a>
             </li>
             <li>
-                <a href="./pagine_secondarie/storyline.html">Campagna</a>
+                <a href="./pagine_secondarie/storyline.html ">Campagna</a>
             </li>
             <li>
-                <a href="./pagine_secondarie/">Online</a>
+                <a href="./pagine_secondarie/ ">Online</a>
             </li>
             <!-- <li>
-                    <a href="./pagine_secondarie/armi.html">Personaggi</a>
+                    <a href="./pagine_secondarie/armi.html ">Personaggi</a>
                 </li> -->
             <!-- Fare un submenu? -->
         </ul>
-        <div class="cta introtxt">
-            <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2" class="button" target="_blank">Gioca ora</a>
+        <div class="cta introtxt ">
+            <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
         </div>
-        <div class="hamburger" onclick="showhide()">
+        <div class="hamburger " onclick="showhide() ">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
-    <div class="header__background"></div>
 
 
 
 
-    <div class="hero">
-        <div class="hero__content">
-            <p class="introtxt tw">Benvenuto</p>
-            <h1 class="bigtxt">Battlefront 2 Wiki</h1>
+    <div class="hero ">
+        <div class="hero__content ">
+            <p class="introtxt tw ">Benvenuto</p>
+            <h1 class="bigtxt ">Battlefront 2 Wiki</h1>
         </div>
     </div>
 
-    <div class="poster mt3 mst3">
-        <div class="poster__img">
-            <img src="./media/images/Iden_Versio.jpg" alt="Campaign image">
+    <div class="poster mt3 mst3 ">
+        <div class="poster__img ">
+            <img src="./media/images/Iden_Versio.jpg " alt="Campaign image ">
         </div>
-        <div class="poster__content">
+        <div class="poster__content ">
             <h3 class="bigtxt ">La storia</h3>
             <p>Gioca nei panni di Iden Versio, a capo della squadra speciale Inferno, per seguire la battaglia di Endor e gli eventi successivi dal punto di vista di un imperiale.</p>
-            <div class="button tw">Scopri di più</div>
+            <div class="button tw ">Scopri di più</div>
         </div>
     </div>
-
-    <div class="poster mt3 mst3">
-        <div class="poster__content">
-            <h3 class="bigtxt">Online</h3>
+    <!-- Online poster -->
+    <div class="poster mt3 mst3 ">
+        <div class="poster__content ">
+            <h3 class="bigtxt ">Online</h3>
             <p>Buttati nelle battaglie online fino a 40 giocatori, gioca come un soldato, pilota iconici veicoli e astronavi, come il camminatore AT-AT o il caccia ala X, o impersonifica i tuoi eroi (o antieroi) della saga.</p>
-            <div class="button tw">Scopri di più</div>
+            <div class="button tw ">Scopri di più</div>
         </div>
-        <div class="poster__img"><img src="./media/images/Battlefront_I_wallapaper.jpg" alt="online battles img"></div>
+        <div class="poster__img "><img src="./media/images/Battlefront_I_wallapaper.jpg " alt="online battles img "></div>
 
     </div>
 
@@ -89,17 +90,23 @@
 
 </html>
 
-<script src="./function.js"></script>
+<script src="./function.js "></script>
 
 <!-- <script>
     function showhide(){
-    let menu = document.getElementsByClassName("menu")[0];
-    menu.classList.toggle("menu-show")
+    let menu = document.getElementsByClassName("menu ")[0];
+    menu.classList.toggle("menu-show ")
 }
 </script> -->
 
 <script>
-    function ciao() {
-        console.log("ciao")
+    function header_hover() {
+        let h_container = document.getElementsByClassName("header__container ")[0];
+        h_container.classList.toggle('b-g')
     }
+
+    // function header_hover_remove() {
+    //     let h_container = document.getElementsByClassName("header__container ")[0];
+    //     h_container.classList.remove('b-g')
+    // }
 </script>
