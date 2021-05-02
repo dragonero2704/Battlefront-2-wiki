@@ -1,3 +1,7 @@
+/* Helpers */
+
+@import url("./helpers.css");
+
 /* Stanfard properties */
 
 * {
@@ -67,19 +71,37 @@ img {
     font-weight: bold;
 }
 
+.header__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.b-g {
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3))
+}
+
 header {
     position: fixed;
     width: 100%;
-    max-width: 1350px;
+    max-width: 1500px;
     top: 0;
     left: 50%;
     display: flex;
-    /* background-color: rgb(42, 42, 44); */
+    background: transparent;
     /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
     padding: 30px;
+    margin: 0 auto;
     transform: translate(-50%);
 }
+
+
+/* header:hover {
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
+} */
 
 
 /* menu */
@@ -108,7 +130,7 @@ header {
         top: 0;
         left: 0;
         height: 100vh;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.9));
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
         padding-top: 80px;
         transform-origin: center center;
         transform: translateY(-100vh);
@@ -117,10 +139,6 @@ header {
     .menu.menu-show {
         display: block;
         transform: translateY(0vh);
-    }
-    .hide-hero__content {
-        /* transform: translateY(100vh); */
-        display: none;
     }
     .menu li {
         display: block;
@@ -188,16 +206,22 @@ header {
     width: 100%;
     background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Hero_background_fullhd.jpg") no-repeat center center;
     background-size: cover;
-    z-index: 0;
 }
 
 .hero__content {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1500px;
     padding: 30px;
     margin: 0 auto;
     color: white;
     transition: .5s ease-in-out;
+}
+
+@media (max-width:768px) {
+    .hide-hero__content {
+        /* transform: translateY(100vh); */
+        display: none;
+    }
 }
 
 
@@ -226,6 +250,9 @@ header {
     }
 }
 
+
+/* poster */
+
 .poster {
     display: flex;
     height: 100vh;
@@ -244,6 +271,8 @@ header {
 
 .poster__img img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width:768px) {
@@ -254,31 +283,6 @@ header {
     .poster__img {
         width: 100%;
         height: auto;
-    }
-}
-
-
-/* Helpers */
-
-.tw {
-    color: white;
-}
-
-.mt1 {
-    margin-top: 50px;
-}
-
-.mt2 {
-    margin-top: 100px;
-}
-
-.mt3 {
-    margin-top: 150px;
-}
-
-@media (max-width:768px) {
-    .mst3 {
-        margin-top: 50px;
     }
 }
 
