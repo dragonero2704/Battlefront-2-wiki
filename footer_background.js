@@ -2,8 +2,9 @@ const canvas = document.getElementById('canvas1')
     // let canvas = document.createElement('canvas')
 const ctx = canvas.getContext('2d')
 
-canvas.width = canvas.clientWidth
-canvas.height = canvas.clientHeight
+
+canvas.width = canvas.offsetWidth
+canvas.height = canvas.offsetHeight
 
 console.log(canvas.width)
 console.log(canvas.height)
@@ -16,9 +17,11 @@ let mouse = {
     radius: (canvas.height / 120) * (canvas.width / 120)
 }
 
-window.addEventListener('mousemove', function(event) {
+canvas.addEventListener('mousemove', function(event) {
     mouse.x = event.x
     mouse.y = event.y
+        // console.log(mouse.x)
+        // console.log(mouse.y)
 });
 
 class Particle {
@@ -60,13 +63,12 @@ class Particle {
                 this.x -= 10;
             }
             if (this.y > mouse.y && this.y < canvas.height - (this.size * 10 + 100)) {
-                this.y += (mouse.radius - (this.y - mouse.y))
+                this.y += 10
             }
             if (this.y < mouse.y && this.y > (this.size * 10 + 100)) {
                 this.y -= 10;
             }
-            this.draw()
-            return;
+
         }
 
         this.x += this.directionx;
@@ -95,7 +97,7 @@ function init() {
 //animation loop
 function animate() {
     requestAnimationFrame(animate)
-    ctx.clearRect(0, 0, innerWidth, innerHeight)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
     }
@@ -111,8 +113,7 @@ function connect() {
             let maxd = (canvas.width / 5) * (canvas.height / 5);
 
             if (distance < maxd) {
-                opacityvalue = 1 - (distance / 20000)
-                console.log('sium')
+                opacityvalue = 1 - (distance / 15000)
                 ctx.strokeStyle = `rgb(255,255,255, ${opacityvalue})`;
                 ctx.lineWidth = 1;
                 ctx.beginPath();
@@ -126,13 +127,13 @@ function connect() {
 }
 
 window.addEventListener('resize', function() {
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
     mouse.radius = (canvas.height / 100) * (canvas.width / 100)
     init()
 })
 
-window.addEventListener('mouseout',
+canvas.addEventListener('mouseout',
     function() {
         mouse.x = undefined;
         mouse.y = undefined;
