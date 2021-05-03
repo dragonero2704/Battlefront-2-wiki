@@ -134,7 +134,7 @@ header {
         padding-top: 80px;
         transform-origin: center center;
         transform: translateY(-100vh);
-        transition: .3s ease-in-out;
+        transition: .9s cubic-bezier(.215, .61, .355, 1);
     }
     .menu.menu-show {
         display: block;
