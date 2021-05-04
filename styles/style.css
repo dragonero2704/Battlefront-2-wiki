@@ -85,7 +85,8 @@ img {
 }
 
 .b-g {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3))
+    background: linear-gradient(0deg, rgb(0, 0, 0, .9), rgb(0, 0, 0, .9))
+    /* background-color: black; */
 }
 
 header {
