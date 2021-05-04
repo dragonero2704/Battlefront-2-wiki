@@ -22,7 +22,7 @@
 <body>
     <div class="header__container" onmouseover="header_hover()" , onmouseout="header_hover_remove()">
         <header>
-            <div class=" logo ">
+            <div class="logo">
                 <img src="media/logo/inferno_squad.png " alt="logo image ">
             </div>
             <ul class="menu introtxt">
@@ -43,7 +43,7 @@
             <div class="cta introtxt ">
                 <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
             </div>
-            <div class="hamburger " onclick="showhide() ">
+            <div class="hamburger" onclick="showhide() ">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -55,34 +55,59 @@
 
 
 
-    <div class="hero ">
+    <div class="hero">
         <div class="hero__content ">
             <p class="introtxt tw ">Benvenuto</p>
             <h1 class="bigtxt ">Battlefront 2 Wiki</h1>
         </div>
     </div>
 
-    <div class="poster mt3 mst3 ">
+    <div class="poster mt3 mst3 reveal">
         <div class="poster__img ">
             <img src="./media/images/Iden_Versio.jpg " alt="Campaign image ">
         </div>
         <div class="poster__content ">
             <h3 class="bigtxt ">La storia</h3>
             <p>Gioca nei panni di Iden Versio, a capo della squadra speciale Inferno, per seguire la battaglia di Endor e gli eventi successivi dal punto di vista di un imperiale.</p>
-            <div class="button tw ">Scopri di più</div>
+            <div class="button tw "><a href="">Scopri di più</a></div>
         </div>
     </div>
     <!-- Online poster -->
-    <div class="poster mt3 mst3 ">
+    <div class="poster mt3 mst3 reveal a-r">
         <div class="poster__content ">
             <h3 class="bigtxt ">Online</h3>
             <p>Buttati nelle battaglie online fino a 40 giocatori, gioca come un soldato, pilota iconici veicoli e astronavi, come il camminatore AT-AT o il caccia ala X, o impersonifica i tuoi eroi (o antieroi) della saga.</p>
             <div class="button tw ">Scopri di più</div>
         </div>
         <div class="poster__img "><img src="./media/images/Battlefront_I_wallapaper.jpg " alt="online battles img "></div>
-
     </div>
 
+    <footer class="mt3">
+        <canvas id="canvas1">
+            <!-- <div class="footer__content">
+                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
+            </div> -->
+        </canvas>
+        <script src="./javascript/footer_background.js"></script>
+        <div class="creator__grid">
+            <div class="creator__column">
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class="introtxt tw">Roberto Rudi</h3>
+                    <!-- <h3 class="introtxt tw"></h3> -->
+                    <h3 class="introtxt tw">"dragonero2704"</h3>
+                </a>
+
+            </div>
+            <div class="creator__column">
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class="introtxt tw">Andrea Mattavelli</h3>
+                    <h3 class="introtxt tw">"andreji12"</h3>
+                </a>
+
+
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -92,23 +117,13 @@
 
 </html>
 
-<script src="./function.js "></script>
-
-<!-- <script>
-    function showhide(){
-    let menu = document.getElementsByClassName("menu ")[0];
-    menu.classList.toggle("menu-show ")
-}
-</script> -->
-
+<script src="./javascript/function.js "></script>
+<!-- Scrollreveal -->
 <script>
-    function header_hover() {
-        let h_container = document.getElementsByClassName("header__container ")[0];
-        h_container.classList.add('b-g')
-    }
-
-    function header_hover_remove() {
-        let h_container = document.getElementsByClassName("header__container ")[0];
-        h_container.classList.remove('b-g')
-    }
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 1000,
+        distance: '1000px',
+    })
 </script>
