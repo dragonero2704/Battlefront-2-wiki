@@ -33,7 +33,16 @@ footer #canvas1 {
     bottom: 0;
     background-color: black;
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: flex;
     z-index: 0;
+}
+
+@media (max-width:768px) {
+    .creator__column h3 {
+        font-size: 10px;
+    }
+    footer {
+        height: 100px;
+    }
 }
