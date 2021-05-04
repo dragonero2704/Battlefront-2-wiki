@@ -3,18 +3,19 @@ const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 
 
-canvas.width = canvas.offsetWidth
-canvas.height = canvas.offsetHeight
+canvas.width = canvas.clientWidth
+canvas.height = canvas.clientHeight
+canvas.LocationX = canvas.getBoundingClientRect().x
+canvas.LocationY = canvas.getBoundingClientRect().y
 
-console.log(canvas.width)
-console.log(canvas.height)
+
 
 let particlesArray = [];
 
 let mouse = {
     x: null,
     y: null,
-    radius: (canvas.height / 120) * (canvas.width / 120)
+    radius: (canvas.height / 50) * (canvas.width / 50)
 }
 
 canvas.addEventListener('mousemove', function(event) {
@@ -49,27 +50,29 @@ class Particle {
             this.directiony = -this.directiony
         }
         //Circle collision detection
-        let dx = mouse.x - this.x;
-        let dy = mouse.y - this.y;
-        let distance = Math.sqrt(dx * dx + dy * dy);
+        // let dx = (mouse.x - canvas.LocationX) - this.x;
+        // let dy = (mouse.y - canvas.LocationY) - this.y;
+        // let distance = Math.sqrt(dx * dx + dy * dy);
 
-        if (distance < mouse.radius + this.size) {
-            //check which direction to move
-            if (this.x > mouse.x && this.x < canvas.width - (this.size * 10 + 100)) {
-                // this.x += 10;
-                this.x += 10
-            }
-            if (this.x < mouse.x && this.x > (this.size * 10 + 10)) {
-                this.x -= 10;
-            }
-            if (this.y > mouse.y && this.y < canvas.height - (this.size * 10 + 100)) {
-                this.y += 10
-            }
-            if (this.y < mouse.y && this.y > (this.size * 10 + 100)) {
-                this.y -= 10;
-            }
-
-        }
+        // if (distance < mouse.radius + this.size) {
+        //     //check which direction to move
+        //     console.log('collsion detected')
+        //     if (this.x > (mouse.x - canvas.LocationX) && this.x < canvas.width - (this.size * 10 + 100)) {
+        //         // this.x += 10;
+        //         this.x += 10
+        //     }
+        //     if (this.x < (mouse.x - canvas.LocationX) && this.x > (this.size * 10 + 10)) {
+        //         this.x -= 10;
+        //     }
+        //     if (this.y > (mouse.y - canvas.LocationY) && this.y < canvas.height - (this.size * 10 + 10)) {
+        //         this.y += 10
+        //     }
+        //     if (this.y < (mouse.y - canvas.LocationY) && this.y > (this.size * 10 + 10)) {
+        //         this.y -= 10;
+        //     }
+        //     this.draw()
+        //     return
+        // }
 
         this.x += this.directionx;
         this.y += this.directiony;
@@ -113,7 +116,7 @@ function connect() {
             let maxd = (canvas.width / 5) * (canvas.height / 5);
 
             if (distance < maxd) {
-                opacityvalue = 1 - (distance / 15000)
+                opacityvalue = 1 - (distance / (canvas.width * canvas.height / 25))
                 ctx.strokeStyle = `rgb(255,255,255, ${opacityvalue})`;
                 ctx.lineWidth = 1;
                 ctx.beginPath();
@@ -127,8 +130,8 @@ function connect() {
 }
 
 window.addEventListener('resize', function() {
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
     mouse.radius = (canvas.height / 100) * (canvas.width / 100)
     init()
 })

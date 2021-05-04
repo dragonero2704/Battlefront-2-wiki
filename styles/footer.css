@@ -1,0 +1,36 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.creator__grid {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.creator__column {
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.creator__column h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer #canvas1 {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    z-index: 0;
+}
