@@ -1,76 +1,10 @@
-/* Helpers */
-
-@import url("./helper/helpers.css");
-
 /* Stanfard properties */
 
-* {
-    box-sizing: border-box;
-}
+@import url("./standard/standard.css");
 
-.group {
-    display: flow-root;
-}
+/* Helpers */
 
-
-/* More base styles */
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: black;
-    scrollbar-width: 0%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    color: inherit;
-}
-
-p {
-    line-height: 28px;
-    color: #666;
-}
-
-img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Text sizes */
-
-.smalltxt {
-    font-size: 14px;
-}
-
-.normaltxt {
-    font-size: 20px;
-}
-
-.medtxt {
-    font-size: 40px;
-}
-
-.bigtxt {
-    font-size: 70px;
-}
-
-.introtxt {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-}
-
+@import url("./helpers/helpers.css");
 
 /* header */
 
@@ -103,11 +37,6 @@ header {
     transform: translate(-50%);
     z-index: 10;
 }
-
-
-/* header:hover {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
-} */
 
 
 /* menu */
@@ -184,6 +113,9 @@ header {
     }
 }
 
+
+/* hamburger */
+
 .hamburger {
     display: none;
 }
@@ -248,13 +180,9 @@ header {
 
 @media (max-width:768px) {
     .hide-hero__content {
-        /* transform: translateY(100vh); */
         display: none;
     }
 }
-
-
-/* hamburger */
 
 
 /* poster */
@@ -317,7 +245,7 @@ header {
 footer {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
 
 .creator__grid {
@@ -368,12 +296,6 @@ footer #canvas1 {
         height: 100px;
     }
 }
-
-
-/* grid */
-
-
-/* Colori */
 
 
 /* rgb(49, 47, 47, .8) Bel grigio */
