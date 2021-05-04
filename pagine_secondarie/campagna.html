@@ -5,13 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- Interfont  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- My css  -->
+    <link rel="stylesheet" href="../styles/style.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../images/logo/titanfall-2-logo.png" type="image/x-icon">
-    <title>Storyline</title>
+    <link rel="shortcut icon" href="../media/logo/inferno_squad.png" type="image/x-icon">
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Battlefront 2 Wiki</title>
 </head>
 
 <body>
+    <div class="header__container">
+        <header>
+            <div class="logo">
+                <img src="../media/logo/inferno_squad.png " alt="logo image ">
+            </div>
+            <ul class="menu introtxt">
+                <li>
+                    <a href="../index.html ">Home</a>
+                </li>
+                <li>
+                    <a href="storyline.html ">Campagna</a>
+                </li>
+                <li>
+                    <a href="online.html">Online</a>
+                </li>
+                <!-- <li>
+                        <a href="./pagine_secondarie/armi.html ">Personaggi</a>
+                    </li> -->
+                <!-- Fare un submenu? -->
+            </ul>
+            <div class="cta introtxt ">
+                <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
+            </div>
+            <div class="hamburger" onclick="showhide() ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
 
+    <div class="hero">
+        <div class="hero__img"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="mt3">
+        <canvas id="canvas1">
+            <!-- <div class="footer__content">
+                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
+            </div> -->
+        </canvas>
+        <script src="../javascript/footer_background.js"></script>
+        <div class="creator__grid">
+            <div class="creator__column">
+                <div>
+                    <a href="https://github.com/dragonero2704" target="_blank">
+                        <h3 class="introtxt tw">Roberto Rudi</h3>
+                        <!-- <h3 class="introtxt tw"></h3> -->
+                        <h3 class="introtxt tw">"dragonero2704"</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="creator__column">
+                <div>
+                    <a href="https://github.com/andreji12" target="_blank">
+                        <h3 class="introtxt tw">Andrea Mattavelli</h3>
+                        <h3 class="introtxt tw">"andreji12"</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
+<script src="../javascript/function.js "></script>
+<!-- Scrollreveal -->
+<script>
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 1500,
+        distance: '1000px',
+    })
+</script>
+
 
 </html>
