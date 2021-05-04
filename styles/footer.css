@@ -23,9 +23,15 @@ footer {
     text-align: center;
 }
 
+.creator__column * {
+    margin: auto;
+    width: fit-content;
+}
+
 .creator__column h3 {
-    margin: 0;
     margin-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 footer #canvas1 {
