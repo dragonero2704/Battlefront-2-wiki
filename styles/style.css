@@ -1,79 +1,12 @@
-/* Helpers */
-
-@import url("./helpers.css");
-
-/* footer css */
-
-@import url("./footer.css");
-
 /* Stanfard properties */
 
-* {
-    box-sizing: border-box;
-}
+@import url("./standard/standard.css");
 
-.group {
-    display: flow-root;
-}
+/* Helpers */
 
+@import url("./helpers/helpers.css");
 
-/* More base styles */
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: black;
-    scrollbar-width: 0%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    color: inherit;
-}
-
-p {
-    line-height: 28px;
-    color: #666;
-}
-
-img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Text sizes */
-
-.smalltxt {
-    font-size: 14px;
-}
-
-.normaltxt {
-    font-size: 20px;
-}
-
-.medtxt {
-    font-size: 40px;
-}
-
-.bigtxt {
-    font-size: 70px;
-}
-
-.introtxt {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-}
+/* header */
 
 .header__container {
     position: fixed;
@@ -104,11 +37,6 @@ header {
     transform: translate(-50%);
     z-index: 10;
 }
-
-
-/* header:hover {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3));
-} */
 
 
 /* menu */
@@ -186,6 +114,32 @@ header {
 }
 
 
+/* hamburger */
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .hamburger span {
+        width: 100%;
+        height: 5px;
+        border-radius: 8px;
+        background-color: white;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
 /* button */
 
 .button {
@@ -226,34 +180,7 @@ header {
 
 @media (max-width:768px) {
     .hide-hero__content {
-        /* transform: translateY(100vh); */
         display: none;
-    }
-}
-
-
-/* hamburger */
-
-.hamburger {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-    }
-    .hamburger span {
-        width: 100%;
-        height: 5px;
-        border-radius: 8px;
-        background-color: white;
-        display: block;
-        margin-bottom: 10px;
     }
 }
 
@@ -296,8 +223,79 @@ header {
 
 /* grid */
 
+.grid {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
-/* Colori */
+.column {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .grid {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.creator__grid {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .5), rgb(0, 0, 0, .5));
+}
+
+.creator__column {
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.creator__column * {
+    margin: auto;
+    width: fit-content;
+}
+
+.creator__column h3 {
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer #canvas1 {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
+
+@media (max-width:768px) {
+    .creator__column h3 {
+        font-size: 13px;
+    }
+    footer {
+        height: 100px;
+    }
+}
 
 
 /* rgb(49, 47, 47, .8) Bel grigio */
