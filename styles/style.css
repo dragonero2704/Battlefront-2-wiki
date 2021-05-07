@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: fit-content;
     z-index: 10;
 }
 
@@ -22,19 +22,22 @@
     /* background-color: black; */
 }
 
+
+/* header non più fixed, ora il container è fixed */
+
 header {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     max-width: 1500px;
-    top: 0;
-    left: 50%;
+    /* top: 0; */
+    /* left: 50%; */
     display: flex;
     background: transparent;
     /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
     padding: 30px;
     margin: 0 auto;
-    transform: translate(-50%);
+    /* transform: translate(-50%); */
     z-index: 10;
 }
 
@@ -126,7 +129,7 @@ header {
         width: 50px;
         height: 50px;
         position: absolute;
-        top: 50px;
+        top: 35px;
         right: 50px;
     }
     .hamburger span {
@@ -216,7 +219,6 @@ header {
 .poster {
     display: flex;
     height: 100vh;
-    width: 100%;
     align-items: center;
 }
 
@@ -227,7 +229,6 @@ header {
 
 .poster__content {
     width: 40%;
-    height: 100%;
     padding: 50px;
 }
 
