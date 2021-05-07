@@ -165,22 +165,16 @@ header {
     align-items: center;
     height: 100vh;
     width: 100%;
-    /* background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Hero_background_fullhd.jpg") no-repeat center center; */
-    /* background-size: cover; */
 }
 
-.hero__img {
+.hero img {
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     z-index: 0;
-}
-
-.hero__img img {
-    object-fit: cover;
 }
 
 .hero__content {
@@ -192,6 +186,9 @@ header {
     transition: .5s ease-in-out;
     z-index: 2;
 }
+
+
+/* Velatura opaca */
 
 .hero::after {
     content: '';
@@ -216,16 +213,18 @@ header {
 .poster {
     display: flex;
     height: 100vh;
+    width: 100%;
     align-items: center;
 }
 
 .poster__img {
     width: 60%;
-    height: 100vh;
+    height: 100%;
 }
 
 .poster__content {
     width: 40%;
+    height: 100%;
     padding: 50px;
 }
 
