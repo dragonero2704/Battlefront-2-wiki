@@ -48,6 +48,10 @@
     font-weight: bold;
 }
 
+.capital {
+    text-transform: uppercase;
+}
+
 @media (max-width:768px) {
     .bigtxt {
         font-size: 40px;
