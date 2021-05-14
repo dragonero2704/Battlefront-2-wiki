@@ -1,11 +1,3 @@
-/* Stanfard properties */
-
 @import url("./standard/standard.css");
-
-/* Helpers */
-
 @import url("./helpers/helpers.css");
-
-/* components */
-
 @import url("./components/bootstrap.css");

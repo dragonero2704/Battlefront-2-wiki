@@ -1,0 +1,62 @@
+@import url("./standard/standard.css");
+@import url("./helpers/helpers.css");
+@import url("./components/bootstrap.css");
+
+/* spazio per personalizzare il css della pagina */
+
+#bg-grid-missions.column {
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Operation_cinder.png") center center no-repeat;
+    bac
+}
+
+#bg-grid-characters.column {
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Inferno_Squad.jpg") center center no-repeat;
+}
+
+#bg-grid-missions.column,
+#bg-grid-characters.column {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#bg-grid-missions.column *,
+#bg-grid-characters.column * {
+    color: transparent;
+    width: 100%;
+}
+
+#bg-grid-missions.column:hover *,
+#bg-grid-characters.column:hover * {
+    display: block;
+    animation: fade-in 1.5s cubic-bezier(.215, .61, .355, 1) .5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        color: rgb(255, 255, 255, .1);
+        transform: scale(0);
+        /* background: linear-gradient(0deg, rgb(0, 0, 0, 0.0001), rgb(0, 0, 0, 0.0001)); */
+    }
+    to {
+        color: rgb(255, 255, 255);
+        transform: scale(1.5);
+        /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
+    }
+}
+
+@media (max-width:768px) {
+    #bg-grid-missions.column,
+    #bg-grid-characters.column {
+        height: 50%;
+    }
+    #bg-grid-missions.column:hover *,
+    #bg-grid-characters.column:hover * {
+        display: block;
+    }
+    #bg-grid-missions.column *,
+    #bg-grid-characters.column * {
+        color: white;
+        width: 100%;
+    }
+}
