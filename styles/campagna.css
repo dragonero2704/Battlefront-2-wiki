@@ -28,7 +28,7 @@
 #storia.column:hover *,
 #personaggi.column:hover * {
     display: block;
-    animation: fade-in 1.5s forwards;
+    animation: fade-in 1.5s cubic-bezier(.215, .61, .355, 1) .5s forwards;
 }
 
 @keyframes fade-in {
