@@ -4,29 +4,29 @@
 
 /* spazio per personalizzare il css della pagina */
 
-#storia.column {
+#bg-grid-missions.column {
     background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .8)), url("../media/images/Iden_Versio.jpg") center center no-repeat;
 }
 
-#personaggi.column {
+#bg-grid-characters.column {
     background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .8)), url("../media/images/naboo_battle.jpg") center center no-repeat;
 }
 
-#storia.column,
-#personaggi.column {
+#bg-grid-missions.column,
+#bg-grid-characters.column {
     background-size: cover;
     display: flex;
     align-items: center;
 }
 
-#storia.column *,
-#personaggi.column * {
+#bg-grid-missions.column *,
+#bg-grid-characters.column * {
     color: transparent;
     width: 100%;
 }
 
-#storia.column:hover *,
-#personaggi.column:hover * {
+#bg-grid-missions.column:hover *,
+#bg-grid-characters.column:hover * {
     display: block;
     animation: fade-in 1.5s cubic-bezier(.215, .61, .355, 1) .5s forwards;
 }
