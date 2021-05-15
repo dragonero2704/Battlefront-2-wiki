@@ -21,8 +21,9 @@
 
 #bg-grid-missions.column *,
 #bg-grid-characters.column * {
-    color: transparent;
+    /* color: transparent; */
     width: 100%;
+    transform: scale(0);
 }
 
 #bg-grid-missions.column:hover *,
