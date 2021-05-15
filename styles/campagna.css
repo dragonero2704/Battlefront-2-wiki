@@ -21,7 +21,6 @@
 
 #bg-grid-missions.column *,
 #bg-grid-characters.column * {
-    /* color: transparent; */
     width: 100%;
     transform: scale(0);
 }
@@ -57,7 +56,7 @@
     }
     #bg-grid-missions.column *,
     #bg-grid-characters.column * {
-        color: white;
+        transform: scale(1);
         width: 100%;
     }
 }
