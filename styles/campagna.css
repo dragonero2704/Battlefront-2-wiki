@@ -5,7 +5,7 @@
 /* spazio per personalizzare il css della pagina */
 
 #bg-grid-missions.column {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .7) 70%, rgb(0, 0, 0, .8)), url("../media/images/Inferno_Squad_mission.jpg") center center no-repeat;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .5) 70%, rgb(0, 0, 0, .8)), url("../media/images/Inferno_Squad_mission.jpg") center center no-repeat;
 }
 
 #bg-grid-characters.column {
@@ -23,25 +23,17 @@
 #bg-grid-characters.column * {
     width: 100%;
     transform: scale(0);
+    color: rgb(255, 255, 255, .001);
 }
 
 #bg-grid-missions.column:hover *,
 #bg-grid-characters.column:hover * {
     display: block;
-    animation: fade-in 1s cubic-bezier(.215, .61, .355, 1) .5s forwards;
-}
-
-@keyframes fade-in {
-    from {
-        color: rgb(255, 255, 255, .1);
-        transform: scale(0);
-        /* background: linear-gradient(0deg, rgb(0, 0, 0, 0.0001), rgb(0, 0, 0, 0.0001)); */
-    }
-    to {
-        color: rgb(255, 255, 255);
-        transform: scale(1);
-        /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
-    }
+    /* animation: fade-in 1s cubic-bezier(.215, .61, .355, 1) .5s forwards; */
+    transform: scale(1);
+    color: rgb(255, 255, 255);
+    transition: 1s cubic-bezier(.215, .61, .355, 1);
+    transition-delay: .5s;
 }
 
 @media (max-width:768px) {
