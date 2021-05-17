@@ -67,6 +67,27 @@ footer #canvas1 {
     z-index: 0;
 }
 
+i.fa-github {
+    position: relative;
+}
+
+i.fa-github::after {
+    content: '\f09b';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    color: #6e5494;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 15;
+}
+
+i.fa-github:hover::after {
+    height: 100%;
+}
+
 @media (max-width:768px) {
     .creator__column h3 {
         font-size: 13px;
