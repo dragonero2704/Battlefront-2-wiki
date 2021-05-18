@@ -5,7 +5,7 @@
     height: auto;
     align-content: center;
     justify-content: center;
-    /* background: linear-gradient(0deg, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("../../media/images/Hyperspace_jump.png") center center no-repeat; */
+    background: linear-gradient(0deg, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("../../media/images/cielo_stellato.jpg") center center no-repeat;
     background: black;
     background-size: cover;
 }
