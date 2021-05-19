@@ -36,3 +36,9 @@
 .item__content h3 {
     margin: 0;
 }
+
+@media (max-width:768px) {
+    .item__img {
+        height: 200px;
+    }
+}

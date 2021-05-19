@@ -5,11 +5,11 @@
 /* spazio per personalizzare il css della pagina */
 
 #bg-grid-missions.column {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .5) 70%, rgb(0, 0, 0, .8)), url("../media/images/Inferno_Squad_mission.jpg") center center no-repeat;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .6) 70%, rgb(0, 0, 0, .6)), url("../media/images/Inferno_Squad_mission.jpg") center center no-repeat;
 }
 
 #bg-grid-characters.column {
-    background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .8)), url("../media/images/Inferno_Squad.jpg") center center no-repeat;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .3) 70%, rgb(0, 0, 0, .3)), url("../media/images/Inferno_Squad.jpg") center center no-repeat;
 }
 
 #bg-grid-missions.column,
