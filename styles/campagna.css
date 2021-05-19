@@ -14,26 +14,48 @@
 
 #bg-grid-missions.column,
 #bg-grid-characters.column {
+    position: relative;
     background-size: cover;
     display: flex;
     align-items: center;
 }
 
-#bg-grid-missions.column *,
-#bg-grid-characters.column * {
+#bg-grid-missions.column h1,
+#bg-grid-characters.column h1 {
     display: block;
     width: 100%;
     transform: scale(0);
 }
 
-#bg-grid-missions.column:hover *,
-#bg-grid-characters.column:hover * {
+.decorate::after,
+.decorate::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 30%;
+    height: 0%;
+}
+
+.decorate::before {
+    right: -40%;
+}
+
+.decorate::after {
+    left: -40%;
+}
+
+#bg-grid-missions.column:hover h1,
+#bg-grid-characters.column:hover h1 {
     display: block;
     /* animation: fade-in 1s cubic-bezier(.215, .61, .355, 1) .5s forwards; */
     transform: scale(1);
     color: rgb(255, 255, 255);
     transition: 1s cubic-bezier(.215, .61, .355, 1);
     transition-delay: .5s;
+    width: fit-content;
 }
 
 @media (max-width:768px) {
@@ -42,9 +64,10 @@
         height: 50%;
         background-position: center center;
     }
-    #bg-grid-missions.column *,
-    #bg-grid-characters.column * {
+    #bg-grid-missions.column h1,
+    #bg-grid-characters.column h1 {
         display: block;
+        width: fit-content;
         transform: scale(1);
     }
 }
