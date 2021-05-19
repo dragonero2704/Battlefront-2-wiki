@@ -63,7 +63,7 @@
     </div>
 
     <!-- Worlds carousel -->
-    <div class="world-carousel mt3">
+    <div class="main-carousel mt3" data-flickity='{ "cellAlign": "left", "contain": true }'>
         <div class="carousel-cell">
             <div class="world">Ajan Kloss</div>
         </div>
@@ -118,6 +118,9 @@
         <div class="carousel-cell">
             <div class="world">Yavin 4</div>
         </div>
+
+        .
+
     </div>
 
 
@@ -167,18 +170,3 @@
 </html>
 
 <script src="../javascript/function.js"></script>
-
-<script>
-    var elem = document.querySelector('.world-carousel');
-    var flkty = new Flickity(elem, {
-        // options
-        cellAlign: 'left',
-        contain: true
-    });
-
-    // element argument can be a selector string
-    //   for an individual element
-    var flkty = new Flickity('.world-carousel', {
-        // options
-    });
-</script>

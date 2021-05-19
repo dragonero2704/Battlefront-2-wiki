@@ -1,3 +1,13 @@
+.main-carousel {
+    padding: 40px 0;
+}
+
+.carousel-cell {
+    width: auto;
+    height: auto;
+    margin-right: 40px;
+}
+
 .world {
     position: relative;
     border-radius: 100%;
@@ -28,5 +38,8 @@
         width: 200px;
         height: 200px;
         line-height: 200px;
+    }
+    .flickity-page-dots {
+        display: none;
     }
 }
