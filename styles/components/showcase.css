@@ -37,6 +37,10 @@
     margin: 0;
 }
 
+.item__content p {
+    text-align: justify;
+}
+
 @media (max-width:768px) {
     .item__img {
         height: 300px;
