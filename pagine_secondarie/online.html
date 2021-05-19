@@ -15,6 +15,8 @@
     <!-- Flickity css and Javascript -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/632d3ab13d.js" crossorigin="anonymous"></script>
 
 
     <!-- My css  -->
@@ -24,8 +26,147 @@
     <title>Online</title>
 </head>
 
-<body>
+<body onscroll="black_band()">
+    <div class="header__container">
+        <header>
+            <div class="logo">
+                <img src="../media/logo/inferno_squad.png " alt="logo image ">
+            </div>
+            <ul class="menu introtxt">
+                <li>
+                    <a href="../index.html ">Home</a>
+                </li>
+                <li>
+                    <a href="campagna.html">Campagna</a>
+                </li>
+                <li>
+                    <a href="online.html">Online</a>
+                </li>
+            </ul>
+            <div class="cta introtxt ">
+                <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
+            </div>
+            <div class="hamburger" onclick="showhide() ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
 
+    <div class="hero">
+        <div class="hero__content">
+            <p class="tw introtxt">Conquista la galassia</p>
+            <h1 class="tw bigtxt">Battaglie Online</h1>
+        </div>
+        <img src="../media/images/Battlefront_I_wallapaper.jpg" alt="">
+    </div>
+
+    <!-- Worlds carousel -->
+    <div class="main-carousel mt3" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <div class="world">Ajan Kloss</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Bespin</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Crait</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Morte Nera II</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Endor</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Felucia</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Geonosis</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Hoth</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Jakku</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Kamino</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Kashyyyk</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Naboo</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Kessel</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Scarif</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Base Starkiller</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Takodana</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Tatooine</div>
+        </div>
+        <div class="carousel-cell">
+            <div class="world">Yavin 4</div>
+        </div>
+
+        .
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="mt3 mst3">
+        <div class="creator__grid">
+            <div class="creator__box">
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Roberto Rudi</h3>
+                </a>
+            </div>
+            <div class="creator__box">
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Andrea Mattavelli</h3>
+                </a>
+            </div>
+            <p class="CC"><i class="fab fa-creative-commons"></i>2021 Tutti i diritti riservati</p>
+        </div>
+
+        <canvas id="canvas1">
+            <!-- <div class="footer__content">
+                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
+            </div> -->
+        </canvas>
+        <script src="../javascript/footer_background.js"></script>
+    </footer>
 </body>
 
 </html>
+
+<script src="../javascript/function.js"></script>

@@ -10,6 +10,8 @@
     <!-- Interfont  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/632d3ab13d.js" crossorigin="anonymous"></script>
     <!-- My css  -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon -->
@@ -23,7 +25,8 @@
     <div class="header__container">
         <header>
             <div class="logo">
-                <img src="media/logo/inferno_squad.png " alt="logo image ">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="media/logo/inferno_squad.png " alt="logo image "></a>
+
             </div>
             <ul class="menu introtxt">
                 <li>
@@ -35,10 +38,6 @@
                 <li>
                     <a href="./pagine_secondarie/online.html ">Online</a>
                 </li>
-                <!-- <li>
-                        <a href="./pagine_secondarie/armi.html ">Personaggi</a>
-                    </li> -->
-                <!-- Fare un submenu? -->
             </ul>
             <div class="cta introtxt ">
                 <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
@@ -53,9 +52,10 @@
 
     <div class="hero">
         <div class="hero__content ">
-            <p class="introtxt tw ">Benvenuto</p>
+            <p class="introtxt tw">Benvenuto</p>
             <h1 class="bigtxt ">Battlefront 2 Wiki</h1>
         </div>
+        <img src="./media/images/Hero_background_fullhd.jpg" alt="">
     </div>
 
     <div class="poster mt3 mst2 reveal">
@@ -71,7 +71,7 @@
     <!-- Online poster -->
     <div class="poster mt3 mst3 reveal">
         <div class="poster__img ">
-            <img src="./media/images/Battlefront_I_wallapaper.jpg " alt="online battles img ">
+            <img src="./media/images/Online_battles.jpg " alt="online battles img ">
         </div>
         <div class="poster__content ">
             <h3 class="bigtxt ">Online</h3>
@@ -81,32 +81,33 @@
 
     </div>
 
-    <footer class="mt3 mst3">
+    <footer class="mt3 mst2">
+
+
+        <div class="creator__grid">
+            <div class="creator__box">
+
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Roberto Rudi</h3>
+                </a>
+
+            </div>
+            <div class="creator__box">
+
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Andrea Mattavelli</h3>
+                </a>
+
+            </div>
+            <p class="CC"><i class="fab fa-creative-commons"></i>2021 Tutti i diritti riservati</p>
+        </div>
         <canvas id="canvas1">
-            <!-- <div class="footer__content">
-                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
-            </div> -->
         </canvas>
         <script src="./javascript/footer_background.js"></script>
-        <div class="creator__grid">
-            <div class="creator__column">
-                <div>
-                    <a href="https://github.com/dragonero2704" target="_blank">
-                        <h3 class="introtxt tw">Roberto Rudi</h3>
-                        <!-- <h3 class="introtxt tw"></h3> -->
-                        <h3 class="introtxt tw">"dragonero2704"</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="creator__column">
-                <div>
-                    <a href="https://github.com/andreji12" target="_blank">
-                        <h3 class="introtxt tw">Andrea Mattavelli</h3>
-                        <h3 class="introtxt tw">"andreji12"</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
     </footer>
 
 
@@ -123,7 +124,7 @@
     ScrollReveal().reveal('.reveal', {
         easing: 'cubic-bezier(.215,.61,.355,1)',
         // distance: '100px'
-        duration: 1000,
+        duration: 800,
         distance: '1000px',
     })
 </script>

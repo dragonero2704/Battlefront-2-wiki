@@ -25,7 +25,7 @@ header {
     background: transparent;
     /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto;
     /* transform: translate(-50%); */
     z-index: 10;
@@ -44,12 +44,41 @@ header {
 .menu li {
     color: white;
     display: inline-block;
+    position: relative;
     margin-right: 20px;
     /* border: 2px solid red; */
 }
 
 .menu li a {
+    position: relative;
     color: white;
+    padding: 5px;
+}
+
+.menu a::before,
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 2px;
+    width: 0%;
+    transition: .2s width;
+    z-index: 20;
+}
+
+.menu a::before {
+    top: 0;
+}
+
+.menu a::after {
+    bottom: 0;
+}
+
+.menu a:hover::after,
+.menu a:hover::before {
+    width: 100%;
 }
 
 @media (max-width:768px) {
@@ -111,10 +140,11 @@ header {
     .hamburger {
         display: block;
         width: 50px;
-        height: 50px;
+        height: auto;
         position: absolute;
-        top: 35px;
+        top: 50%;
         right: 50px;
+        transform: translateY(-50%);
     }
     .hamburger span {
         width: 100%;
@@ -124,7 +154,7 @@ header {
         display: block;
         margin-bottom: 10px;
     }
-    .hamburger span:nth-last-child() {
-        margin-bottom: 0;
+    .hamburger span:nth-child(3) {
+        margin: 0;
     }
 }

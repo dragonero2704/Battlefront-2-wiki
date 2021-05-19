@@ -2,6 +2,10 @@
     color: white;
 }
 
+.tg {
+    color: #666;
+}
+
 .mt1 {
     margin-top: 50px;
 }
@@ -12,6 +16,10 @@
 
 .mt3 {
     margin-top: 150px;
+}
+
+.mt4 {
+    margin-top: 200px;
 }
 
 @media (max-width:768px) {
@@ -55,8 +63,5 @@
 @media (max-width:768px) {
     .bigtxt {
         font-size: 40px;
-    }
-    .introtxt {
-        font-size: 25px;
     }
 }
