@@ -5,14 +5,14 @@
     height: auto;
     align-content: center;
     justify-content: center;
-    background: linear-gradient(0deg, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("../../media/images/cielo_stellato.jpg") center center no-repeat;
+    /* background: linear-gradient(0deg, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("../../media/images/cielo_stellato.jpg") center center no-repeat; */
     background: black;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .item {
     width: 400px;
-    height: auto;
+    height: fit-content;
     min-height: 600px;
     padding: 20px;
     /* border: 2px solid red; */
@@ -39,6 +39,6 @@
 
 @media (max-width:768px) {
     .item__img {
-        height: 200px;
+        height: 300px;
     }
 }
