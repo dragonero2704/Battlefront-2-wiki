@@ -55,8 +55,21 @@
         </header>
     </div>
 
+    <div class="hero">
+        <div class="hero__content">
+            <p class="tw introtxt">Battaglie su scala galattica</p>
+            <h1 class="tw bigtxt">Online</h1>
+        </div>
+        <img src="../media/images/Online_battles.jpg" alt="">
+    </div>
 
-
+    <!-- Worlds carousel -->
+    <div class="world-carousel">
+        <div class="carousel-cell">...</div>
+        <div class="carousel-cell">...</div>
+        <div class="carousel-cell">...</div>
+        ...
+    </div>
 
 
 
@@ -110,3 +123,18 @@
 </body>
 
 </html>
+
+<script>
+    var elem = document.querySelector('.world-carousel');
+    var flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity('.world-carousel', {
+        // options
+    });
+</script>

@@ -25,7 +25,7 @@ header {
     background: transparent;
     /* background: linear-gradient(0deg, rgb(0, 0, 0, .3), rgb(0, 0, 0, .3)); */
     color: white;
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto;
     /* transform: translate(-50%); */
     z-index: 10;
@@ -46,12 +46,17 @@ header {
     display: inline-block;
     position: relative;
     margin-right: 20px;
-    padding: 5px;
     /* border: 2px solid red; */
 }
 
-.menu li::before,
-.menu li::after {
+.menu li a {
+    position: relative;
+    color: white;
+    padding: 5px;
+}
+
+.menu a::before,
+.menu a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -63,21 +68,17 @@ header {
     z-index: 20;
 }
 
-.menu li::before {
+.menu a::before {
     top: 0;
 }
 
-.menu li::after {
+.menu a::after {
     bottom: 0;
 }
 
-.menu li:hover::after,
-.menu li:hover::before {
+.menu a:hover::after,
+.menu a:hover::before {
     width: 100%;
-}
-
-.menu li a {
-    color: white;
 }
 
 @media (max-width:768px) {

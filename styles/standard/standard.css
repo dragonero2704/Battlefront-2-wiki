@@ -9,10 +9,13 @@
 
 /* More base styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: black;
-    scrollbar-width: 0%;
     margin: 0;
     padding: 0;
 }
