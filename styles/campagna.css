@@ -21,9 +21,9 @@
 
 #bg-grid-missions.column *,
 #bg-grid-characters.column * {
+    display: block;
     width: 100%;
     transform: scale(0);
-    color: rgb(255, 255, 255, .001);
 }
 
 #bg-grid-missions.column:hover *,
@@ -42,14 +42,10 @@
         height: 50%;
         background-position: center center;
     }
-    #bg-grid-missions.column:hover *,
-    #bg-grid-characters.column:hover * {
-        display: block;
-    }
     #bg-grid-missions.column *,
     #bg-grid-characters.column * {
+        display: block;
         transform: scale(1);
-        width: 100%;
     }
 }
 
