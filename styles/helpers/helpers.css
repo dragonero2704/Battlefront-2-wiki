@@ -6,6 +6,18 @@
     color: #666;
 }
 
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
 .mt1 {
     margin-top: 50px;
 }
