@@ -10,13 +10,13 @@
     /* background-size: cover; */
 }
 
-.poster_item{
+.poster_item {
     width: 100%;
     height: fit-content;
     min-height: 600px;
     padding: 25px;
     background: black;
-    display: flex;  
+    display: flex;
 }
 
 .poster_item_img {
@@ -24,15 +24,16 @@
     height: 400;
 }
 
-.poster_item_img::after{
-    
-}
 
-.poster_item_img img{
+/* .poster_item_img::after{
+    
+} */
+
+.poster_item_img img {
     object-fit: cover;
 }
 
-.poster_item_content{
+.poster_item_content {
     padding: 10px;
     width: 50%;
     display: flex;

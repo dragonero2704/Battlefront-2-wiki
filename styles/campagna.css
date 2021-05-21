@@ -27,7 +27,8 @@
     transform: scale(0);
 }
 
-.decorate::after,
+
+/* .decorate::after,
 .decorate::before {
     content: '';
     position: absolute;
@@ -45,7 +46,7 @@
 
 .decorate::after {
     left: -40%;
-}
+} */
 
 #bg-grid-missions.column:hover h1,
 #bg-grid-characters.column:hover h1 {
