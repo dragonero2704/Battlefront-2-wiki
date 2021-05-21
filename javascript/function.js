@@ -20,7 +20,7 @@ function black_band() {
     // console.log('La funzione è stata chiamata')
     let h_container = document.getElementsByClassName("header__container")[0];
     if (window.scrollY > window.innerHeight - 100) {
-        console.log('La pagina è stata scrollata')
+        // console.log('La pagina è stata scrollata')
         h_container.classList.add('b-g')
     } else {
         h_container.classList.remove('b-g')
