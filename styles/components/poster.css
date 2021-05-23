@@ -30,3 +30,7 @@
         height: auto;
     }
 }
+
+.reverse {
+    flex-direction: row-reverse;
+}
