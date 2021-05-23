@@ -29,6 +29,9 @@
         width: 100%;
         height: auto;
     }
+    .poster__content {
+        padding: 35px;
+    }
 }
 
 .reverse {
