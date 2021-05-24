@@ -152,7 +152,7 @@
 
         <div class="window">
             <!-- Iden Versio -->
-            <div class="item">
+            <div class="item delay1">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Iden_Versio_item.jpg" alt="Iden Versio">
                 </div>
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <!-- Del Meeko -->
-            <div class="item">
+            <div class="item delay2">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Del_Meeko.jpg" alt="Del Meeko">
                 </div>
@@ -174,7 +174,7 @@
                 </div>
             </div>
             <!-- Gideon Hask -->
-            <div class="item">
+            <div class="item delay3">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Gideon_Hask.png" alt="Gideon Hask">
                 </div>
@@ -185,7 +185,7 @@
                 </div>
             </div>
             <!-- Zay Versio -->
-            <div class="item">
+            <div class="item delay4">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Zay_Versio.png" alt="Zay Versio">
                 </div>
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <!-- Shriv -->
-            <div class="item">
+            <div class="item delay1">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Shriv.jpg" alt="Shriv">
                 </div>
@@ -208,7 +208,7 @@
                 </div>
             </div>
             <!-- Ammiraglio Versio -->
-            <div class="item">
+            <div class="item delay2">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Ammiraglio_Versio.jpg" alt="Ammiraglio_Versio">
                 </div>
@@ -219,7 +219,7 @@
                 </div>
             </div>
             <!-- Gleb -->
-            <div class="item">
+            <div class="item delay3">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Gleb.png" alt="Gleb">
                 </div>
@@ -230,7 +230,7 @@
                 </div>
             </div>
             <!-- Maz -->
-            <div class="item">
+            <div class="item delay4">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Maz-Kanata.jpg" alt="Maz Kanata">
                 </div>
@@ -243,7 +243,7 @@
             </div>
 
             <!-- Luke Skywalker -->
-            <div class="item">
+            <div class="item delay1">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Luke_Skywalker.jpg" alt="Luke Skywalker">
                 </div>
@@ -256,7 +256,7 @@
                 </div>
             </div>
             <!-- Lando Carlissian -->
-            <div class="item">
+            <div class="item delay2">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Lando_Carlissian.jpg" alt="Lando Carlissian">
                 </div>
@@ -270,7 +270,7 @@
                 </div>
             </div>
             <!-- Han Solo -->
-            <div class="item">
+            <div class="item delay3">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Han_Solo.jpg" alt="Han Solo">
                 </div>
@@ -284,7 +284,7 @@
                 </div>
             </div>
             <!-- Chewbacca -->
-            <div class="item">
+            <div class="item delay4">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Chewbacca.jpg" alt="Chewbacca">
                 </div>
@@ -298,7 +298,7 @@
                 </div>
             </div>
             <!-- Leia Organa -->
-            <div class="item">
+            <div class="item delay1">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Leia_Organa.jpg" alt="Leia Organa">
                 </div>
@@ -313,7 +313,7 @@
                 </div>
             </div>
             <!-- Kylo Ren -->
-            <div class="item">
+            <div class="item delay2">
                 <div class="item__img">
                     <img src="../media/images/personaggi-storia/Kylo_Ren.jpg" alt="Kylo Ren">
                 </div>
@@ -372,7 +372,35 @@
         // distance: '100px'
         duration: 1500,
         distance: '1000px',
-    })
+    });
+    ScrollReveal().reveal('.delay1', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 100,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay2', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 200,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay3', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 300,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay4', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 400,
+        mobile: false,
+    });
 </script>
 
 
