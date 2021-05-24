@@ -9,7 +9,7 @@
     padding: 25px;
 }
 
-.decorate::before {
+.poster__content .decorate::before {
     content: '';
     height: 100%;
     top: 0;
