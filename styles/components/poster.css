@@ -58,3 +58,8 @@
 .reverse {
     flex-direction: row-reverse;
 }
+
+.contain img {
+    object-fit: contain;
+    position: fixed;
+}

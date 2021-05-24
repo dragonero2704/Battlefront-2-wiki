@@ -282,14 +282,14 @@
             </div>
         </div>
         <div class="item">
-            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__img"><img src="../media/images/veicoli/Tie_advanced_Darth_Vader.jpg" alt="Tie Advanced X1"></div>
             <div class="item__content">
                 <h3 class="tw medtxt">"Tie advanced X1"<br>Darth Vader</h3>
                 <p></p>
             </div>
         </div>
         <div class="item">
-            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__img"><img src="../media/images/veicoli/X-Wing_Luke.jpg" alt=""></div>
             <div class="item__content">
                 <h3 class="tw medtxt">"T65B X-Wing"<br>Luke Skywalker</h3>
                 <p></p>
@@ -317,7 +317,7 @@
             </div>
         </div>
         <div class="item">
-            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__img"><img src="../media/images/veicoli/Tie_LN.jpg" alt=""></div>
             <div class="item__content">
                 <h3 class="tw medtxt">"Tie/LN"<br>Iden Versio</h3>
                 <p></p>
@@ -332,9 +332,9 @@
 
 
     <!-- Worlds carousel -->
-    <div class="mt3">
+    <div class="mt3 reveal">
         <h1 class="txt-center bigtxt">Località di gioco</h1>
-        <div class="main-carousel " data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay":true }'>
+        <div class="main-carousel " data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay":true, "freeScroll": true, "wrapAround": true}'>
             <div class="carousel-cell">
                 <div class="world">
                     <p>Ajan Kloss</p>
@@ -484,3 +484,39 @@
 </html>
 
 <script src="../javascript/function.js"></script>
+<script>
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 1500,
+        distance: '1000px',
+    });
+    ScrollReveal().reveal('.delay1', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 100,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay2', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 200,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay3', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 300,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay4', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 400,
+        mobile: false,
+    });
+</script>
