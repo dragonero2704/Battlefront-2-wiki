@@ -10,54 +10,6 @@
     /* background-size: cover; */
 }
 
-
-/* .poster_item {
-    width: 100%;
-    height: fit-content;
-    min-height: 600px;
-    padding: 25px;
-    background: black;
-    display: flex;
-} */
-
-
-/* .poster_item_img {
-    width: 50%;
-    height: 400;
-} */
-
-
-/* .poster_item_img img {
-    object-fit: cover;
-}
-
-.poster_item_content {
-    padding: 10px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.poster_item__content h3 {
-    margin: 0;
-}
-
-.poster_item__content p {
-    text-align: justify;
-}
-
-.poster_item_content p::before {
-    content: '';
-    height: 100%;
-    top: 0;
-    left: 5px;
-    width: 0;
-    border: 1px solid #666;
-    opacity: 0.5;
-    position: absolute;
-} */
-
 .item {
     width: 400px;
     height: fit-content;
