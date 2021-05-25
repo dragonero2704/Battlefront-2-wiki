@@ -39,10 +39,10 @@ footer {
     width: 100%;
     height: fit-content;
     text-align: center;
-    padding: 2px;
     z-index: 10;
     margin: 0;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
 }
 
 .CC::after {
