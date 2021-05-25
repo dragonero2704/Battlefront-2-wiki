@@ -5,13 +5,635 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- Interfont  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Flickity css and Javascript -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/632d3ab13d.js" crossorigin="anonymous"></script>
+
+
+    <!-- My css  -->
+    <link rel="stylesheet" href="../styles/online.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../images/logo/titanfall-2-logo.png" type="image/x-icon">
-    <title>Titans</title>
+    <link rel="shortcut icon" href="../media/logo/inferno_squad.png" type="image/x-icon">
+    <title>Online</title>
 </head>
 
-<body>
+<body onscroll="black_band()">
+    <div class="header__container">
+        <header>
+            <div class="logo">
+                <img src="../media/logo/inferno_squad.png " alt="logo image ">
+            </div>
+            <ul class="menu introtxt">
+                <li>
+                    <a href="../index.html ">Home</a>
+                </li>
+                <li>
+                    <a href="campagna.html">Campagna</a>
+                </li>
+                <li>
+                    <a href="online.html">Online</a>
+                </li>
+            </ul>
+            <div class="cta introtxt ">
+                <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
+            </div>
+            <div class="hamburger" onclick="showhide() ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
 
+    <div class="hero">
+        <div class="hero__content">
+            <p class="tw introtxt">Conquista la galassia</p>
+            <h1 class="tw bigtxt">Battaglie Online</h1>
+        </div>
+        <img src="../media/images/Battlefront_I_wallapaper.jpg" alt="">
+    </div>
+
+    <!-- Classi di soldati -->
+    <!-- 
+        assalto
+        pesante
+        ufficiale
+        specalista
+
+        Infiltrati
+        Combattenti
+        Aviocombattenti
+
+        Corazzato
+        Speeder
+        Artiglieria
+
+        Caccia
+        Intercettore
+        Bombardiere
+     -->
+
+    <!-- eroi -->
+
+    <!-- <div class="esperimento">
+         <div class="boh"></div>
+         <div class="boh"></div>
+         <div class="boh"></div>
+         <div class="boh"></div>
+         <div class="boh"></div>
+         <div class="boh"></div>
+         <div class="boh"></div>
+     </div> -->
+    <div class="poster bigger-content mt3" id="assalto">
+        <div class="poster__img ">
+            <img src="../media/images/classi/assalto.jpg" alt="Assalto">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Assalto</h3>
+            <p>Sium</p>
+        </div>
+    </div>
+
+    <div class="poster bigger-content reverse mt3" id="pesante">
+        <div class="poster__img">
+            <img src="../media/images/classi/pesante.jpg" alt="">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Pesante</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content mt3" id="ufficiale">
+        <div class="poster__img">
+            <img src="../media/images/classi/ufficiale.jpg" alt="ufficiale">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Ufficiale</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content reverse mt3" id="specialista">
+        <div class="poster__img">
+            <img src="../media/images/classi/specialista.jpg" alt="specialista">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Specialista</h3>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="poster bigger-content mt3" id="infiltrato">
+        <div class="poster__img">
+            <img src="../media/images/classi/infiltrato.jpg" alt="infiltrato">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Infiltrato</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content reverse mt3" id="combattente">
+        <div class="poster__img">
+            <img src="../media/images/classi/combattente.jpg" alt="combattente">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Combattente</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content mt3" id="aviosoldato">
+        <div class="poster__img">
+            <img src="../media/images/classi/aviosoldato.jpg" alt="aviosoldato">
+        </div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Aviosoldato</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content reverse mt3" id="corazzato">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Corazzato</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content mt3" id="speeder">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Speeder</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content reverse mt3" id="artiglieria">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Artiglieria</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content mt3" id="caccia">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Caccia</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content reverse mt3" id="intercettore">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Intercettore</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="poster bigger-content mt3" id="bombardiere">
+        <div class="poster__img"></div>
+        <div class="poster__content">
+            <h3 class="bigtxt">Bombardiere</h3>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="window mt3">
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Boba Fett</h3>
+                <p>Cacciatore di taglie</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Bossk</h3>
+                <p>Cacciatore di taglie</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Chewbacca</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Darth Vader</h3>
+                <p>Troppo sgravato</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Imperatore Palpatine</h3>
+                <p>Lightining goes brrr</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Han Solo</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/personaggi-storia/Iden_Versio_item.jpg" alt="Iden Versio"></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Iden Versio</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Lando Carlissian</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Kylo Ren</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Leia Organa</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Luke Skywalker</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Darth Maul</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Rey</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Yoda</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Finn</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Capitano Phasma</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Generale Grevious</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Obi-Wan Kenobi</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Conte Dooku</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">Anakin Skywalker</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">BB8</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">BB-9E</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"The Silencer"<br>Kylo Ren</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Millenium Falcon" <br>Lando e L3-37</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/Millenium_Falcon_Han_Solo.jpg" alt="Millenium Falcon Han Solo"></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Millenium Falcon" <br>Han Solo e Chewbacca</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Millenium Falcon" <br>Rey e Chewbacca</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/Scimitar.jpg" alt="Scimitar"></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Scimitar"<br>Darth Maul</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/Slave1.jpg" alt="Slave1"></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Slave 1"<br>Boba Fett</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/Tie_advanced_Darth_Vader.jpg" alt="Tie Advanced X1"></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Tie advanced X1"<br>Darth Vader</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/X-Wing_Luke.jpg" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"T65B X-Wing"<br>Luke Skywalker</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"T70 X-Wing"<br>Poe Dameron</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Actis interceptor"<br>Yoda</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"RZ2 A-wing"<br>Tallie Lintra</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item__img"><img src="../media/images/veicoli/Tie_LN.jpg" alt=""></div>
+            <div class="item__content">
+                <h3 class="tw medtxt">"Tie/LN"<br>Iden Versio</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Worlds carousel -->
+    <div class="mt3 reveal">
+        <h1 class="txt-center bigtxt">Località di gioco</h1>
+        <div class="main-carousel " data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay":true, "freeScroll": true, "wrapAround": true}'>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Ajan Kloss</p>
+                    <img src="../media/images/pianeti/Ajan_Kloss.jpg" alt="Ajan_Kloss">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Bespin</p>
+                    <img src="../media/images/pianeti/Bespin.jpg" alt="Bespin">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Coruscant</p>
+                    <img src="../media/images/pianeti/Coruscant.jpg" alt="Coruscant">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Crait</p>
+                    <img src="../media/images/pianeti/Crait.jpg" alt="Crait">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Morte Nera II</p>
+                    <img src="../media/images/pianeti/Morte_Nera_II.jpg" alt="Death_Star_II">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Endor</p>
+                    <img src="../media/images/pianeti/Endor.jpg" alt="Endor">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Felucia</p>
+                    <img src="../media/images/pianeti/Felucia.jpg" alt="Felucia">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Geonosis</p>
+                    <img src="../media/images/pianeti/Geonosis.jpg" alt="Geonosis">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Hoth</p>
+                    <img src="../media/images/pianeti/Hoth.jpg" alt="Hoth">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Jakku</p>
+                    <img src="../media/images/pianeti/Jakku.jpg" alt="Jakku">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Kamino</p>
+                    <img src="../media/images/pianeti/Kamino.jpg" alt="Kamino">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Kashyyyk</p>
+                    <img src="../media/images/pianeti/Kashyyyk.jpg" alt="Kashyyyk">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Naboo</p>
+                    <img src="../media/images/pianeti/Naboo.jpg" alt="Naboo">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Kessel</p>
+                    <img src="../media/images/pianeti/Kessell.jpg" alt="Kessel">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Scarif</p>
+                    <img src="../media/images/pianeti/Scarif.jpg" alt="Scarif">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Base Starkiller</p>
+                    <img src="../media/images/pianeti/Base_Starkiller.jpg" alt="Base Starkiller">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Takodana</p>
+                    <img src="../media/images/pianeti/Takodana.jpg" alt="Takodana">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Tatooine</p>
+                    <img src="../media/images/pianeti/Tatooine.jpg" alt="Tatooine">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="world">
+                    <p>Yavin 4</p>
+                    <img src="../media/images/pianeti/Yavin_4.jpg" alt="Yavin 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt3 mst3">
+        <div class="creator__grid">
+            <div class="creator__box">
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Roberto Rudi</h3>
+                </a>
+            </div>
+            <div class="creator__box">
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Andrea Mattavelli</h3>
+                </a>
+            </div>
+            <p class="CC"><i class="fab fa-creative-commons"></i>2021 Tutti i diritti riservati</p>
+        </div>
+
+        <canvas id="canvas1">
+            <!-- <div class="footer__content">
+                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
+            </div> -->
+        </canvas>
+        <script src="../javascript/footer_background.js"></script>
+    </footer>
 </body>
 
 </html>
+
+<script src="../javascript/function.js"></script>
+<script>
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 1500,
+        distance: '1000px',
+    });
+    ScrollReveal().reveal('.delay1', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 100,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay2', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 200,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay3', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 300,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay4', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '1000px',
+        delay: 400,
+        mobile: false,
+    });
+</script>

@@ -10,60 +10,113 @@
     <!-- Interfont  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/632d3ab13d.js" crossorigin="anonymous"></script>
     <!-- My css  -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="media/logo/inferno_squad.png" type="image/x-icon">
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Battlefront 2 Wiki</title>
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <img src="media/logo/inferno_squad.png" alt="logo image">
-        </div>
-        <ul class="menu introtxt">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="./pagine_secondarie/storyline.html">Campagna</a>
-            </li>
-            <li>
-                <a href="./pagine_secondarie/">Online</a>
-            </li>
-            <li>
-                <a href="./pagine_secondarie/armi.html">Classi</a>
-            </li>
-        </ul>
-        <div class="cta introtxt">
-            <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2" class="button" target="_blank">Gioca ora</a>
-        </div>
-        <div class="hamburger" onclick="showhide()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+<body onscroll="black_band()">
+    <div class="header__container">
+        <header>
+            <div class="logo">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="media/logo/inferno_squad.png " alt="logo image "></a>
+
+            </div>
+            <ul class="menu introtxt">
+                <li>
+                    <a href="index.html ">Home</a>
+                </li>
+                <li>
+                    <a href="./pagine_secondarie/campagna.html ">Campagna</a>
+                </li>
+                <li>
+                    <a href="./pagine_secondarie/online.html ">Online</a>
+                </li>
+            </ul>
+            <div class="cta introtxt ">
+                <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button" target="_blank ">Gioca ora</a>
+            </div>
+            <div class="hamburger" onclick="showhide() ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
 
     <div class="hero">
-        <div class="hero__content">
+        <div class="hero__content ">
             <p class="introtxt tw">Benvenuto</p>
-            <h1 class="bigtxt">Battlefront 2 Wiki</h1>
+            <h1 class="bigtxt ">Battlefront 2 Wiki</h1>
         </div>
+        <img src="./media/images/Hero_background_fullhd.jpg" alt="">
     </div>
 
-    <div class="poster mt3 mst3">
+    <div class="poster mt3 mst2 reveal">
         <div class="poster__img">
-            <img src="./media/images/Iden_Versio.jpg" alt="Campaign image">
+            <img src="./media/images/home_page_alternative.png" alt="Battlefront II">
         </div>
         <div class="poster__content">
-            <h3 class="bigtxt ">La storia</h3>
-            <p>Gioca nei panni di Iden Versio, a capo della squadra speciale Inferno, per seguire la battaglia di Endor e gli eventi successivi dal punto di vista di un imperiale</p>
-            <div class="button tw">Scopri di più</div>
+            <h3 class="medtxt">Che cosa è Battlefront 2?</h3>
+            <p>Battlefront II è un videogioco sparatutto ambientato nell'universo di Star Wars</p>
         </div>
     </div>
 
+    <div class="poster reverse mt3 mst2 reveal">
+        <div class="poster__img ">
+            <img src="./media/images/Iden_Versio.jpg " alt="Iden Vesuvio">
+        </div>
+        <div class="poster__content ">
+            <h3 class="bigtxt">La storia</h3>
+            <p>Gioca nei panni di Iden Versio, a capo della squadra speciale Inferno, per seguire la battaglia di Endor e gli eventi successivi dal punto di vista di un imperiale.</p>
+            <div class="button tw"><a href="./pagine_secondarie/campagna.html">Scopri di più</a></div>
+        </div>
+    </div>
+    <!-- Online poster -->
+    <div class="poster mt3 mst3 reveal">
+        <div class="poster__img ">
+            <img src="./media/images/Online_battles.jpg " alt="online battles img ">
+        </div>
+        <div class="poster__content ">
+            <h3 class="bigtxt ">Online</h3>
+            <p>Buttati nelle battaglie online fino a 40 giocatori, gioca come un soldato, pilota iconici veicoli e astronavi, come il camminatore AT-AT o il caccia Ala X, o impersonifica i tuoi eroi (o antieroi) della saga.</p>
+            <div class="button tw "><a href="./pagine_secondarie/online.html">Scopri di più</a></div>
+        </div>
+
+    </div>
+
+    <footer class="mt3 mst2">
+        <div class="creator__grid">
+            <div class="creator__box">
+
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Roberto Rudi</h3>
+                </a>
+
+            </div>
+            <div class="creator__box">
+
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Andrea Mattavelli</h3>
+                </a>
+
+            </div>
+            <p class="CC"><i class="fab fa-creative-commons"></i>2021 Tutti i diritti riservati</p>
+        </div>
+        <canvas id="canvas1">
+        </canvas>
+        <script src="./javascript/footer_background.js"></script>
+    </footer>
 
 
 
@@ -73,11 +126,27 @@
 
 </html>
 
-<script src="./function.js"></script>
-
-<!-- <script>
-    function showhide(){
-    let menu = document.getElementsByClassName("menu")[0];
-    menu.classList.toggle("menu-show")
-}
-</script> -->
+<script src="./javascript/function.js "></script>
+<!-- Scrollreveal -->
+<script>
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 800,
+        distance: '1000px',
+    });
+    ScrollReveal().reveal('.reveal-right', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 800,
+        distance: '1000px',
+        origin: 'right'
+    })
+    ScrollReveal().reveal('.reveal-left', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 800,
+        distance: '1000px',
+        origin: 'left'
+    })
+</script>

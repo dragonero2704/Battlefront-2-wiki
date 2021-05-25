@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.group {
+    display: flow-root;
+}
+
+
+/* More base styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ::selection {
+background-color: white; 
+color: white;
+}*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: inherit;
+}
+
+p {
+    line-height: 28px;
+    color: #666;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 1em;
+    background-color: white;
+    border: .2em solid black;
+    border-radius: .5em;
+    box-shadow: inset 0 0 0 1px #666;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}

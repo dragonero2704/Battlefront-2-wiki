@@ -5,13 +5,374 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- Interfont  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Flickity css and Javascript -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/632d3ab13d.js" crossorigin="anonymous"></script>
+
+    <!-- My css  -->
+    <link rel="stylesheet" href="../styles/campagna.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../images/logo/titanfall-2-logo.png" type="image/x-icon">
-    <title>Storyline</title>
+    <link rel="shortcut icon" href="../media/logo/inferno_squad.png" type="image/x-icon">
+
+    <title>Battlefront 2 Wiki</title>
 </head>
 
-<body>
+<body onscroll="black_band()">
+    <div class="header__container">
+        <header>
+            <div class="logo">
+                <img src="../media/logo/inferno_squad.png " alt="logo image ">
+            </div>
+            <ul class="menu introtxt">
+                <li>
+                    <a href="../index.html ">Home</a>
+                </li>
+                <li>
+                    <a href="campagna.html">Campagna</a>
+                </li>
+                <li>
+                    <a href="online.html">Online</a>
+                </li>
+                <!-- Fare un submenu? -->
+            </ul>
+            <div class="cta introtxt ">
+                <a href="https://www.origin.com/ita/it-it/store/star-wars/star-wars-battlefront-2 " class="button " target="_blank ">Gioca ora</a>
+            </div>
+            <div class="hamburger" onclick="showhide() ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
+
+    <div class="grid">
+        <div id="bg-grid-missions" class="column">
+            <h1 class="tw capital"><a href="#missioni">Missioni</a></h1>
+        </div>
+        <div id="bg-grid-characters" class="column">
+            <h1 class="tw capital"><a href="#personaggi">Personaggi</a></h1>
+        </div>
+    </div>
+
+    <section id="missioni" class="mt3">
+        <!-- 
+           Nessuna traccia
+           La battaglia di Endor
+           Il Dauntless
+           L'osservatorio
+           La tempesta
+           Rinnegati
+           Altezze Reali
+           Generale in pericolo
+           Sotto cieli coperti
+           Scorte d'armi
+           La battaglia di Jakku
+           Fino in fondo
+           Scoperte
+           
+           Progetto resurrezione
+           Le ceneri dell'impero
+           Inferno
+         -->
+        <!-- Questo è quello che intendevo io -->
+        <div class="poster padding-25 bg-black">
+            <div class="poster__img"><img src="../media/images/Corvus.png" alt="Corvus"></div>
+            <div class="poster__content">
+                <p class="decorate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptate minus consequuntur odio provident. Harum, voluptates vitae ut laborum ipsam fuga deserunt laboriosam ad molestias, neque excepturi, obcaecati quod animi.</p>
+            </div>
+        </div>
+        
+        <div class="poster padding-25 bg-black">
+            <div class="poster__img"><img src="../media/images/Corvus.png" alt="Corvus"></div>
+            <div class="poster__content">
+                <p class="decorate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptate minus consequuntur odio provident. Harum, voluptates vitae ut laborum ipsam fuga deserunt laboriosam ad molestias, neque excepturi, obcaecati quod animi.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="personaggi" class="mt3">
+        <!-- 
+            Iden Versio | Dio => Zay
+            Del Meeko
+            Gideon Hask
+
+            Ammiraglio Garrik Versio
+            Gleb
+            Shriv
+
+            Luke Skywalker
+            Lando Carlissian
+            Han Solo
+            Maz
+            Chewbacca
+            Leia Organa
+            
+            Kylo Ren
+         -->
+
+        <div class="window">
+            <!-- Iden Versio -->
+            <div class="item delay1">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Iden_Versio_item.jpg" alt="Iden Versio">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Iden Versio</h3>
+                    <p>Comandante della Squadra Inferno. Figlia dell'ammiraglio Versio, è un soldato eccezionale, diplomata all'accademia imperiale a pieni voti. Tuttavia, a seguito dello sterminio di un intero pianeta causato dall'operazione Cenere, si
+                        unirà alla Ribellione e in seguito alla Resistenza per sventare l'operazione Resurrezione.
+                    </p>
+                </div>
+            </div>
+            <!-- Del Meeko -->
+            <div class="item delay2">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Del_Meeko.jpg" alt="Del Meeko">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Del Meeko</h3>
+                    <p>Membro della squadra Inferno, specializzato in armi a distanza, supporta la squadra con il suo fucile da cecchino e con la sua avanzata conoscenza tecnologica. A seguito dell'operazione Cenere, segue Iden per unirsi alla ribellione.</p>
+                </div>
+            </div>
+            <!-- Gideon Hask -->
+            <div class="item delay3">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Gideon_Hask.png" alt="Gideon Hask">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Gideon Hask</h3>
+                    <p>Gideon Hask probabilmente è stato addestrato insieme ad Iden Versio dall'istruttrice Gleb, e con lei è entrato a far parte della squadra Inferno con il ruolo di vicecomandante. Mentre i suoi due compagni durante la distruzione di Vardos
+                        voltano le spalle all'impero, lui gli rimane fedele e continuerà a farlo anche dopo la sua sconfitta portando l'operazione Resurrezione e unendosi al primo ordine.</p>
+                </div>
+            </div>
+            <!-- Zay Versio -->
+            <div class="item delay4">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Zay_Versio.png" alt="Zay Versio">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Zay Versio</h3>
+                    <p>Figlia di Iden Versio e Del Meeko, accompagna la madre in battaglia più volte soprattutto nel tentativo di fermare i rapimenti di bambini necessari all'operazione Resurrezione. Proprio mentre indagano nel tentativo di fermare questa
+                        Zay e Iden si imbattono in uno dei rapitori, e insieme riescono a sconfiggerlo, venendo a conoscenza dell'operazione Resurrezione. Dopo la morte della madre, Zay si unirà alla Resistenza insieme a Shriv.</p>
+                </div>
+            </div>
+            <!-- Shriv -->
+            <div class="item delay1">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Shriv.jpg" alt="Shriv">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Shriv</h3>
+                    <p>Shriv è un abile pilota e combattente della Ribellione, inizialmente sospettoso nei confronti di Iden e Del diventerà poi uno dei loro amici più fedeli, dopo la morte di Iden deciderà di unirsi alla Resistenza per combattere il Primo
+                        Ordine.
+                    </p>
+                </div>
+            </div>
+            <!-- Ammiraglio Versio -->
+            <div class="item delay2">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Ammiraglio_Versio.jpg" alt="Ammiraglio_Versio">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Ammiraglio Versio</h3>
+                    <p>L'incredibile carriera costellata di successi gli ha permesso di diventare una sorta di leggenda sul suo pianeta natale Vardos. E' il padre di Iden Versio e ammiraglio della flotta imperiale, rimane fedele all'impero anche nel suo
+                        momento più buio sperando in una rinascita. Sfortunatamente per lui non sarà così, e infatti muore nella battaglia di Jakku, l'evento che segna la definitiva sconfitta dell'impero.</p>
+                </div>
+            </div>
+            <!-- Gleb -->
+            <div class="item delay3">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Gleb.png" alt="Gleb">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Gleb</h3>
+                    <p>Istruttrice all'accademia imperiale di Vardos e capo della sicurezza Jinata, nella sua scuola solo i migliori si diplomano, e grazie all'incredibile preparazione che è in grado di fornire, spesso i suoi allievi raggiungono i vertici
+                        delle catene di comando. Viene coinvolta nella continuazione del progetto Cenere, ovvero l'operazione Resurrezione, occupandosi del recupero di bambini.</p>
+                </div>
+            </div>
+            <!-- Maz -->
+            <div class="item delay4">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Maz-Kanata.jpg" alt="Maz Kanata">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Maz Kanata</h3>
+                    <p>Maz è un essere millenario di specie sconosciuta e sensibile alla forza, possiede un castello su Takodana dove ospita criminali, contrabbandieri, e gente di ogni tipo, e spesso finanzia anche le loro imprese. Durante l'epoca imperiale
+                        il suo pianeta rimase pressochè intoccato dalla guerra per via delle sue severe regole e grazie alla popolarità che Maz aveva nel mondo dell'illegalità (al punto da essere chiamata la <i>Regina dei pirati</i>).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Luke Skywalker -->
+            <div class="item delay1">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Luke_Skywalker.jpg" alt="Luke Skywalker">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Luke Skywalker</h3>
+                    <p>
+                        Luke Skywalker è uno tra i pochi jedi rimasti, addestrato da Obiwan Kenobi e Yoda, sta cercando di ricostruire l'ordine jedi, alla ricerca delle rovine del vecchio ordine su Pillio casualmente si imbatte in Del Meeko dove riesce a cambiarela sua mentalità
+                        e con essa la sua vita.
+                    </p>
+                </div>
+            </div>
+            <!-- Lando Carlissian -->
+            <div class="item delay2">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Lando_Carlissian.jpg" alt="Lando Carlissian">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Lando Carlissian</h3>
+                    <p>
+                        Lando Calrissian è estremamente noto nella galassia per la sua leggendaria fortuna: diventa amministratore della città di Cloud City dopo averla vinta giocando d’azzardo, ma in seguito alla scelta di tradire il suo amico Han Solo per mantenere il comando
+                        della città, si pente delle proprie azioni e si unisce alla Ribellione. Grazie a lui Iden Versio e Del Meeko vengono accolti nella Ribellione, e parteciperà con la squadra Inferno ad una missione di recupero armi da una fonderia
+                        imperiale.
+                    </p>
+                </div>
+            </div>
+            <!-- Han Solo -->
+            <div class="item delay3">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Han_Solo.jpg" alt="Han Solo">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Han Solo</h3>
+                    <p>
+                        Un contrabbandiere orfano, famoso per aver trovato una via più breve per la rotta di Kessel, durante l'epoca imperiale lavorò prima come assaltatore, poi come contrabbandiere, e infine si unì alla ribellione dopo l'incontro con Luke Skywalker. Contribuì
+                        alla distruzione della morte nera e a molte altre importanti missioni. Han solo e Chewbecca prima della battaglia di Jakku si impegnarano per liberare i Wookie di Kashyyyk dalla schiavitù. Mentre cercava informazioni da un rinnegato
+                        imperiale su Takodana venne salvato dalla squadra Inferno mentre era stato messo alle strette.
+                    </p>
+                </div>
+            </div>
+            <!-- Chewbacca -->
+            <div class="item delay4">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Chewbacca.jpg" alt="Chewbacca">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Chewbacca</h3>
+                    <p>
+                        Questo Wookie è stato uno dei primi soci di Han solo e lo seguì durante fino alla sua morte, la sua arma è una balestra particolarmente potente, ma nonostante supporti spesso Han in combattimento ha delle conoscenze tecnche abbastanza approfondite da
+                        poter mantenere attiva, la costante opera di manutenzione del Millenium Falcon. Parla la lingua degli Wookie che per quanto incoprensibile sembri gli permette di comunicare perfettamente con Han e gli altri membri della Ribellione
+                        alla quale si è unito insieme all'amico.
+                    </p>
+                </div>
+            </div>
+            <!-- Leia Organa -->
+            <div class="item delay1">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Leia_Organa.jpg" alt="Leia Organa">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Leia Organa</h3>
+                    <p>
+                        Figlia del prescelto dalla forza Anakin Skywalker e della regina di Naboo Padme Amidala, sorella gemella di Luke Skywalker, è anch'essa sensibile alla forza ed è perfettamente in grado di utilizzarla, ma non ha mai completato il proprio addestramento.
+                        Inizialmente è uno dei capi della Ribellione e contribuì a moltissimi successi contro l'impero tra cui quello conseguito con l'aiuto della squadra inferno su Naboo nel tentativo di fermare la distruzione di Theed, aiuto poi nella
+                        fondazione della nuova repubblica, e la vide soccombere con la nascita del Primo Ordine, si impegnò poi con la Resistenza nel tentare di sconfiggerlo, morì nel tentativo di riportare Kylo Ren al lato chiarò creando con lui una
+                        connessione attraverso la forza.
+                    </p>
+                </div>
+            </div>
+            <!-- Kylo Ren -->
+            <div class="item delay2">
+                <div class="item__img">
+                    <img src="../media/images/personaggi-storia/Kylo_Ren.jpg" alt="Kylo Ren">
+                </div>
+                <div class="item__content">
+                    <h3 class="tw medtxt">Kylo Ren</h3>
+                    <p>
+                        Kylo Ren è il figlio di Leia Organa e Han Solo, addestrato da Luke nelle vie della forza cede al lato oscuro quando il suo maestro spaventato dal suo potere tenta di ucciderlo. Snoke il leader del Primo Ordine lo guida nelle vie del lato oscuro facendogli
+                        compiere alcune prove, tra cui quella di uccidere suo padre. A causa del conflitto in lui Kylo Ren uccide il leader supremo Snoke e propone a Rey di unirsi a lui, ma davanti al suo rifiuto impegna tutte le forze del Primo Ordine
+                        nel distruggere la Resistenza. Le sue incertezze si fanno più pressanti quando si diffonde la notizia del ritorno di Palpatine, e quando scopre la discendenza di Rey, proprio a causa di ciò ritorna sulla via del lato chiaro e muore
+                        dopo aver curato Rey dalle ferite subite nello scontro con Darth Sidious. Durante l'operazione Resurrezione sfruttò Del Meeko per ottenere informazioni sulla posizione dell'autoesiliato Luke Skywalker.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt3 mst3">
+        <div class="creator__grid">
+            <div class="creator__box">
+
+                <a href="https://github.com/dragonero2704" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Roberto Rudi</h3>
+                </a>
+
+            </div>
+            <div class="creator__box">
+
+                <a href="https://github.com/andreji12" target="_blank">
+                    <h3 class=" tw"><i class="fab fa-github medtxt"></i></h3>
+                    <br>
+                    <h3 class=" tw">Andrea Mattavelli</h3>
+                </a>
+
+            </div>
+            <p class="CC"><i class="fab fa-creative-commons"></i>2021 Tutti i diritti riservati</p>
+        </div>
+
+
+        <canvas id="canvas1">
+            <!-- <div class="footer__content">
+                <h3 class="introtxt tw">Roberto <br> Rudi</h3>
+            </div> -->
+        </canvas>
+        <script src="../javascript/footer_background.js"></script>
+    </footer>
 
 </body>
+
+<script src="../javascript/function.js "></script>
+<!-- Scrollreveal -->
+<script>
+    ScrollReveal().reveal('.reveal', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        // distance: '100px'
+        duration: 1500,
+        distance: '1000px',
+    });
+    ScrollReveal().reveal('.delay1', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '500px',
+        delay: 100,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay2', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '500px',
+        delay: 200,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay3', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '500px',
+        delay: 300,
+        mobile: false,
+    });
+    ScrollReveal().reveal('.delay4', {
+        easing: 'cubic-bezier(.215,.61,.355,1)',
+        duration: 1000,
+        distance: '500px',
+        delay: 400,
+        mobile: false,
+    });
+</script>
+
 
 </html>

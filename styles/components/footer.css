@@ -1,0 +1,95 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.creator__grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .5), rgb(0, 0, 0, .5));
+}
+
+.creator__box {
+    width: 50%;
+}
+
+.creator__box * {
+    width: fit-content;
+    text-align: center;
+    margin: 0;
+}
+
+.creator__box h3 {
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: auto;
+    font-size: 17px;
+}
+
+.CC {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    z-index: 10;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.CC::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    border: 1px solid rgb(102, 102, 102, .5);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+footer #canvas1 {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
+
+i.fa-github {
+    position: relative;
+}
+
+i.fa-github::after {
+    content: '\f09b';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    color: #6e5494;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 15;
+}
+
+i.fa-github:hover::after {
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .creator__column h3 {
+        font-size: 13px;
+    }
+}
