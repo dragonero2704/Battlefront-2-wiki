@@ -61,5 +61,12 @@
 
 .contain img {
     object-fit: contain;
-    position: fixed;
+}
+
+.bigger-content .poster__content {
+    width: 60%;
+}
+
+.bigger-content .poster__img {
+    width: 40%;
 }
