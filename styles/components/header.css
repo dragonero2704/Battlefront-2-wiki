@@ -102,9 +102,6 @@ header {
         padding-top: 40px;
         padding-left: 20px;
     }
-    .menu a {
-        pointer-events: none;
-    }
 }
 
 .logo {
@@ -158,6 +155,6 @@ header {
         margin-bottom: 10px;
     }
     .hamburger span:nth-child(3) {
-        margin: 0;
+        margin-bottom: 0;
     }
 }
