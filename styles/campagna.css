@@ -27,27 +27,6 @@
     transform: scale(0);
 }
 
-
-/* .decorate::after,
-.decorate::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 2px solid white;
-    border-radius: 2px;
-    width: 30%;
-    height: 0%;
-}
-
-.decorate::before {
-    right: -40%;
-}
-
-.decorate::after {
-    left: -40%;
-} */
-
 #bg-grid-missions.column:hover h1,
 #bg-grid-characters.column:hover h1 {
     display: block;
