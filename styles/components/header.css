@@ -145,8 +145,8 @@ header {
         height: auto;
         position: absolute;
         top: 50%;
-        right: 30px;
         transform: translateY(-50%);
+        right: 30px;
     }
     .hamburger span {
         width: 100%;
@@ -156,7 +156,7 @@ header {
         display: block;
         margin-bottom: 10px;
     }
-    .hamburger span:nth-child(3) {
+    .hamburger span:last-child {
         margin-bottom: 0;
     }
 }
