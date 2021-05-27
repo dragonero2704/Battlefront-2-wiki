@@ -1,8 +1,8 @@
-@import url("./standard/standard.css");
 @import url("./helpers/helpers.css");
 @import url("./components/bootstrap.css");
+@import url("./standard/standard.css");
 
-.esperimento{
+/* .esperimento{
     display: flex;
     flex-wrap: wrap;
     background: black;
@@ -32,4 +32,4 @@
     object-fit: cover;
     width: 100%;
     height: 70%;
-}
+} */
