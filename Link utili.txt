@@ -4,3 +4,4 @@ https://fontawesome.com/start   fontawesome
 
 https://www.ea.com/it-it/games/starwars/battlefront/star-wars-battlefront-2/reinforcements Battlefront 2 EA Wiki
 https://squoosh.app/editor Compressore di immagini
+https://util.clipchamp.com/en/transform Compressore Video

@@ -37,13 +37,14 @@
     margin: 0;
 }
 
-.item__content p {
+.item__content>p {
     position: relative;
     text-align: justify;
     padding-top: 16px;
+    margin-bottom: 0;
 }
 
-.item__content p::before {
+.item__content>p::before {
     content: '';
     position: absolute;
     top: 0;
