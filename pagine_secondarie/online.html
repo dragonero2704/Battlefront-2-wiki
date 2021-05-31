@@ -65,6 +65,27 @@
         </video>
     </div>
 
+    <!-- carosello menù -->
+    <div class="mt3 bg-black">
+        <div class="main-carousel " data-flickity='{ "cellAlign": "center", "contain": true, "freeScroll": true, "wrapAround": true}'>
+               <div class="carousel-cell">
+                   <div class="voce tw">
+                        <a href="#eroi">eroi</a>
+                   </div>
+               </div>
+               <div class="carousel-cell">
+                <div class="voce tw">
+                     <a href="#astronavi_speciali">astronavi</a>
+                </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="voce tw">
+                        <a href="#pianeti">pianeti</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
     <!-- Classi di soldati -->
     <!-- 
         assalto
@@ -86,8 +107,6 @@
      -->
 
     <!-- eroi -->
-
-     <div id="classi_base"></div>
 
     <div class="poster mt3" id="assalto">
         <div class="poster__img">
@@ -227,9 +246,7 @@
         </div>
     </div>
 
-    <div id="eroi"></div>
-
-    <div class="window mt3">
+    <div class="window mt3" id="eroi">
         <div class="item interval">
             <div class="item__img"><img src="../media/images/eroi/Boba Fett.jpg" alt="Boba Fett"></div>
             <div class="item__content">
@@ -724,9 +741,7 @@
             </div>
         </div>
 
-        <div id="astronavi_speciali"></div>
-
-        <div class="item interval">
+        <div class="item interval" id="astronavi_speciali">
             <div class="item__img"><img src="../media/images/veicoli/TIE silencer.jpg" alt="TIE silencer"></div>
             <div class="item__content">
                 <h3 class="tw medtxt">"The Silencer"<br>Kylo Ren <i class="fab fa-first-order"></i></h3>
@@ -1005,12 +1020,11 @@
 
 
 
-    <div id="pianeti"></div>
 
 
 
     <!-- Worlds carousel -->
-    <div class="mt3">
+    <div class="mt3" id="pianeti">
         <h1 class="txt-center bigtxt">Località di gioco</h1>
         <div class="main-carousel " data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay":true, "freeScroll": true, "wrapAround": true}'>
             <div class="carousel-cell">
