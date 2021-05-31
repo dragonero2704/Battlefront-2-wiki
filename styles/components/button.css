@@ -5,8 +5,8 @@
     border-radius: 8px;
 }
 
-.button:hover.button,
-.button:focus {
+.button.pulse:hover.button,
+.button.pulse:focus {
     cursor: pointer;
     animation: pulsing 1s cubic-bezier(.02, .9, .58, 1) forwards;
 }
