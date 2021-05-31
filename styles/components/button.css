@@ -5,10 +5,20 @@
     border-radius: 8px;
 }
 
-.button:focus {
-    transform: scale(0.9);
+.button.pulse:hover.button,
+.button.pulse:focus {
+    cursor: pointer;
+    animation: pulsing 1s cubic-bezier(.02, .9, .58, 1) forwards;
 }
 
-.button:hover {
-    cursor: pointer;
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
