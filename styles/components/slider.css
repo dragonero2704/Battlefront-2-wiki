@@ -69,3 +69,10 @@
         display: none;
     }
 }
+
+.voce {
+    height: 50px;
+    width:fit-content;
+    min-width: 100px;
+    text-align: center;
+}
