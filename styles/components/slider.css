@@ -71,8 +71,10 @@
 }
 
 .voce {
-    height: 50px;
-    width:fit-content;
+    position: relative;
+    width: fit-content;
     min-width: 100px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
 }
