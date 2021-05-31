@@ -1,13 +1,6 @@
 @import url("./helpers/helpers.css");
 @import url("./components/bootstrap.css");
 @import url("./standard/standard.css");
-.util-container {
-    display: flex;
-    align-items: baseline;
-    /* justify-content: space-around; */
-    justify-items: left;
-}
-
 .chr-list {
     list-style: none;
     width: 100%;
@@ -19,14 +12,11 @@
 
 .chr-list li {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     padding: 5px;
     padding-left: 0;
     margin-left: 0;
     width: 100%;
     color: #666;
-    justify-content: space-between;
     z-index: 1;
     background: transparent;
 }
