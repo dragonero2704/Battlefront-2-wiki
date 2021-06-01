@@ -160,27 +160,27 @@ header {
     }
     .hamburger span:nth-child(1) {
         top: 0;
-        transform-origin: left center;
+        transform-origin: right center;
     }
     .hamburger span:nth-child(2) {
         top: 15px;
-        transform-origin: left center;
+        transform-origin: right center;
     }
     .hamburger span:nth-child(3) {
         top: 30px;
-        transform-origin: left center;
+        transform-origin: right center;
     }
     .hamburger.cross span:nth-child(1) {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
         top: -3px;
         background-color: #a50c1e;
     }
     .hamburger.cross span:nth-child(2) {
-        width: 0px;
+        transform: translateX(200%);
         transition: 0.1s;
     }
     .hamburger.cross span:nth-child(3) {
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
         top: 32px;
         background-color: #a50c1e;
     }
