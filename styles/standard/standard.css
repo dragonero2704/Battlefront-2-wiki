@@ -17,6 +17,10 @@ html {
     min-width: 100%;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 ::selection {
     background-color: #05076e;
     color: white;
