@@ -17,11 +17,10 @@ html {
     min-width: 100%;
 }
 
-
-/* ::selection {
-background-color: white; 
-color: white;
-}*/
+::selection {
+    background-color: #05076e;
+    color: white;
+}
 
 body {
     font-family: 'Inter', sans-serif;
