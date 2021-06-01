@@ -1,9 +1,11 @@
 function showhide() {
     let menu = document.getElementsByClassName("menu")[0];
     let hero_content = document.getElementsByClassName("hero__content")[0];
+    let hamburger = document.getElementsByClassName("hamburger")[0];
 
     menu.classList.toggle("menu-show");
-    hero_content.classList.toggle("hide-hero__content")
+    hero_content.classList.toggle("hide-hero__content");
+    hamburger.classList.toggle("cross");
 }
 
 // function header_hover() {
