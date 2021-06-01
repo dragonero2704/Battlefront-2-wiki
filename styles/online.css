@@ -1,6 +1,10 @@
 @import url("./helpers/helpers.css");
 @import url("./components/bootstrap.css");
 @import url("./standard/standard.css");
+.hero video {
+    object-fit: cover;
+}
+
 .chr-list {
     list-style: none;
     width: 100%;

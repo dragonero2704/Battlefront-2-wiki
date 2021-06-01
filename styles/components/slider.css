@@ -5,22 +5,23 @@
 .carousel-cell {
     width: auto;
     height: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .world {
     position: relative;
     border-radius: 100%;
     line-height: 300px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     /* border: 2px solid red; */
     text-align: center;
 }
 
 .world p {
     position: relative;
-    line-height: 300px;
+    line-height: 400px;
     margin: 0;
     z-index: 10;
     color: white;
@@ -71,8 +72,70 @@
 }
 
 .voce {
-    height: 50px;
-    width:fit-content;
+    position: relative;
+    width: fit-content;
     min-width: 100px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+}
+
+.mode {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.mode img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.mode::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .4), rgb(0, 0, 0, .4));
+    z-index: 5;
+}
+
+.mode h3 {
+    position: relative;
+    line-height: 300px;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.mode .hidden {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 20;
+    transition: height .5s cubic-bezier(.02, .9, .55, 1);
+    background: linear-gradient(0deg, rgb(0, 0, 0, .9), rgb(0, 0, 0, .9));
+    overflow: hidden;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+.mode .hidden p {
+    text-align: justify;
+}
+
+.mode:hover .hidden,
+.mode:focus .hidden {
+    height: 100%;
 }
