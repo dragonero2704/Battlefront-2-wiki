@@ -4,7 +4,9 @@ function showhide() {
     let hamburger = document.getElementsByClassName("hamburger")[0];
 
     menu.classList.toggle("menu-show");
-    hero_content.classList.toggle("hide-hero__content");
+    if (hero_content) {
+        hero_content.classList.toggle("hide-hero__content");
+    }
     hamburger.classList.toggle("cross");
 }
 
