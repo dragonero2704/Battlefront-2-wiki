@@ -30,6 +30,10 @@
     position: relative;
     width: 40%;
     padding: 50px;
+    /* text-align: justify; */
+}
+
+.poster__content p {
     text-align: justify;
 }
 
